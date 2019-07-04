@@ -136,7 +136,9 @@ grunt.initConfig({
                     	shopHeader: '<%= fixturesPath %>/templates/shop-header.html',
 						footer: '<%= fixturesPath %>/templates/footer.html',
 						pagination:'<%= fixturesPath %>/templates/pagination.html',
-						notifications:'<%= fixturesPath %>/templates/notifications.html'
+						notifications:'<%= fixturesPath %>/templates/notifications.html',
+						header_notification_popup:'<%= fixturesPath %>/templates/header-notification-popup.html',
+						
 					}
                 },
             }

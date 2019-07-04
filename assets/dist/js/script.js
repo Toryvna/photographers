@@ -30,9 +30,24 @@ $(document).ready(function(){
         'padding-bottom': footerHeight
     });
 
-    //close notofications
+    //close notifications
     $('.notification .closeBtn').on('click', function(){
         $(this).parent().removeClass('show');
+    });
+
+    //close/open header notifications
+    $('.notifications_popup-open').on('click', function(){
+        $(".notifications_popup").toggleClass('open');
+    });
+    $('.notifications_popup .closeBtn').on('click', function(){
+        $(this).parent().removeClass('open');
+    });
+
+    $('.notifications_popup-open').bind('click', function (ev) {
+        if (screen.width > 1023 ) {
+            var x = ev.clientX ;
+            $(".notifications_popup").css('left', x - 177);
+        }
     });
 
 });
