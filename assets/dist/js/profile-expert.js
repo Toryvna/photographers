@@ -69,4 +69,30 @@ $(document).ready(function () {
         $(this).css('height', '' + $(this).prop('scrollHeight') + "px");
     });
 
+    //adding photos slider
+    $('.addingPhotos__slider').slick({
+        infinite: true,
+        variableWidth: true,
+        adaptiveHeight: true,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+    });
+    //adding videos slider
+    $('.addingVideos__slider').slick({
+        infinite: true,
+        variableWidth: true,
+        adaptiveHeight: true,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+    });
+
+    //open "adding photo"
+    $('.select-photo').on('click', function(){
+        $('.profile__adding-photos').toggleClass('open');
+    });
+    $('.select-video').on('click', function(){
+        $('.profile__adding-videos').toggleClass('open');
+    });
+    
+
 });
