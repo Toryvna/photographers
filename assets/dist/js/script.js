@@ -30,6 +30,11 @@ $(document).ready(function(){
         'padding-bottom': footerHeight
     });
 
+    //close notofications
+    $('.notification .closeBtn').on('click', function(){
+        $(this).parent().removeClass('show');
+    });
+
 });
 
 $(window).resize(function(){

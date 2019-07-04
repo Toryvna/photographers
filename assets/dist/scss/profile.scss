@@ -4207,7 +4207,10 @@ div#video2 {
 
                 .input-file {
                     margin-top: 6px;
-
+                    margin-right: 10px;
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
                     input {
                         width: .1px;
                         height: .1px;
