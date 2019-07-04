@@ -1265,3 +1265,31 @@ yx-axis
 	.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #fff; background-color: rgba(255,255,255,0.9); }
 	
 	/* ---------------------------------------- */
+
+	.mCSB_inside .mCSB_container {
+		margin-right: 0;
+		
+	}
+	.mCSB_scrollTools .mCSB_draggerContainer {
+		height: 100%;
+	}
+	
+	.mCSB_scrollTools {
+		opacity: 1;
+		right: -6px;
+	}
+	.mCSB_scrollTools .mCSB_dragger{
+		width: 5px;
+		height: 203px;
+		border-radius: 3px;
+		right: 6px;
+		background-color: #696aa8 !important;
+	}
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		background-color: #696aa8 !important;
+	}
+	.mCSB_scrollTools .mCSB_draggerRail {
+		width: 5px;
+		height: 100%;
+		background-color: #d9dfea;
+	}

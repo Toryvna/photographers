@@ -27,7 +27,7 @@
       height: 18px;
       cursor: pointer;
       position: absolute;
-      z-index: 1;
+      z-index: 5;
       &::before {
         content: '';
         top: 8px;
@@ -35,7 +35,7 @@
         width: 21px;
         height: 1px;
         position: absolute;
-        background: #fff;
+        background: #585858;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -49,7 +49,7 @@
         width: 21px;
         height: 1px;
         position: absolute;
-        background: #fff;
+        background: #585858;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -76,12 +76,6 @@
         -webkit-overflow-scrolling:touch;
         &.ios{
             padding-bottom: 100px
-        }
-        .close-popup{
-            &::before,
-            &::after{
-                background-color: #585858;
-            }
         }
         .media{
             text-align: center;
@@ -560,6 +554,7 @@
             top: 17px;
             width: 20px;
             height: 20px;
+            right: 30px;
             &::before, &::after{
                 top: 10px;
                 width: 24px;
@@ -717,6 +712,9 @@
 @media screen and (min-width: 1320px){
     .overlayPopup{
         &.overlay-viewPhoto{
+            .close-popup{
+                display: none;
+            }
             &::before,
             &::after{
                 top: 38px;

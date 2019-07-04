@@ -30,7 +30,7 @@
       height: 18px;
       cursor: pointer;
       position: absolute;
-      z-index: 1;
+      z-index: 5;
       &::before {
         content: '';
         top: 8px;
@@ -386,30 +386,7 @@
       }
     }
 }
-.mCSB_inside .mCSB_container {
-    margin-right: 0;
-    
-}
-.mCSB_scrollTools .mCSB_draggerContainer {
-    height: 100%;
-}
 
-.mCSB_scrollTools {
-    opacity: 1;
-    right: -6px;
-}
-
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    width: 5px;
-    height: 203px;
-    border-radius: 3px;
-    background-color: #696aa8 !important;
-}
-.mCSB_scrollTools .mCSB_draggerRail {
-    width: 5px;
-    height: 100%;
-    background-color: #d9dfea;
-}
 
 @media screen and (min-width: 768px) {
     .overlayPopup {
