@@ -12,7 +12,7 @@
             background-color: #27283c;
             border: 1px solid #27283c;
             color: #ffffff;
-            font-size: 16px;
+            font-size: 16px; 
             -webkit-transition: all .5s;
             -moz-transition: all .5s;
             -ms-transition: all .5s;
@@ -92,6 +92,83 @@
             border-bottom: 2px solid #e1e1e1;
             margin: 0 -15px;
             padding: 20px 15px 12px;
+            &.avatar{
+                border: none;
+                .form__file {
+                    text-align: center;
+                    input {
+                        text-decoration: underline;
+                        width: .1px;
+                        height: .1px;
+                        opacity: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        z-index: -1;
+                    }
+    
+                    label {
+                        cursor: pointer;
+                        position: relative;
+                        z-index: 1;
+    
+                        .imgSize {
+                            display: block;
+                            width: 125px;
+                            height: 125px;
+                            margin: 0 auto;
+                            background-color: #d9dfea;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            z-index: -1;
+                            background-position: center top;
+                            background-size: cover;
+                            position: relative;
+    
+                            i {
+                                font-size: 97px;
+                                color: #c0c9d8;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+    
+                        #preview {
+                            display: block;
+                            height: 100%;
+                        }
+    
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+    
+                    span {
+                        &.uploadTitle {
+                            color: #fffefe;
+                            font-size: 16px;
+                            display: inline-block;
+                            background-color: #54559c;
+                            border: 2px solid #54559c;
+                            -webkit-transition: all .5s;
+                            -moz-transition: all .5s;
+                            -ms-transition: all .5s;
+                            -o-transition: all .5s;
+                            transition: all .5s;
+                            padding: 7px 66px;
+                            margin-top: 21px;
+    
+                            &:hover {
+                                border: 2px solid #27283c;
+                                color: #27283c;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
             .title-blk{
                 margin-bottom: 20px;
                 display: flex;
@@ -624,6 +701,12 @@
             &-item{
                 display: flex;
                 align-items: center;
+                &.avatar{
+                    padding-top: 35px;
+                    .title-blk{
+                        align-self: flex-start;
+                    }
+                }
                 &.remove{
                     display: block;
                 }

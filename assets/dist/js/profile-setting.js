@@ -28,5 +28,20 @@ $(document).ready(function(){
     $( "#range-value1" ).val($( "#slider-range" ).slider( "values", 0 ) );
     $( "#range-value2" ).val($( "#slider-range" ).slider( "values", 1 ) );
 
+    //upload image 
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('.imgSize').css('background-image', 'url(' + e.target.result + ')');
+                $('#preview').hide();
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#file").change(function(){
+        readURL(this);
+    });
 
 });
