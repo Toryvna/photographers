@@ -476,6 +476,10 @@ a.ui-button:active,
             }
         }
         &-content{
+            display: none;
+            &.active{
+                display: block;
+            }
             .project{
                 background-color: #f7f7f7;
                 margin: 25px 15px;

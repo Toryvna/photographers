@@ -122,19 +122,21 @@
                 <div class="projects-nav">
                     <div class="nav">
                         <ul>
-                            <li class="active"><a href="javascript:void(0)">Все сообщение</a></li>
-                            <li><a href="javascript:void(0)">Непрочитанные 3</a></li>
-                            <li><a href="javascript:void(0)">Важные сообщения</a></li>
+                            <li class="filter-items filter-items active" data-tab="allTab"><a href="javascript:void(0)">Все сообщение</a></li>
+                            <li class="filter-items filter-items" data-tab="unreadTab"><a href="javascript:void(0)">Непрочитанные 3</a></li>
+                            <li class="filter-items filter-items" data-tab="importantTab"><a href="javascript:void(0)">Важные сообщения</a></li>
                         </ul>
                     </div>
-                    <form class="clearfix">
-                        <div class="search">
-                            <input type="text" placeholder="Имя друга">
-                            <button><i class="icon-icon25"></i></button>
-                        </div>
-                    </form>
                 </div>
-                <div class="messages-content">
+                <div class="messages-content active tab-item allTab">
+                    <div class="messages-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Имя друга">
+                                <button><i class="icon-icon25"></i></button>
+                            </div>
+                        </form>
+                    </div>
                     <div class="messages-item">
                         <a href="profile-messages2.html"></a>
                         <span class="del"></span>
@@ -233,6 +235,106 @@
                             <a href="javascript:void(0)"></a>
                             <div class="avatar-text">
                                 <h4><a href="javascript:void(0)"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <a class="arrow-prev" href="javascript:void(0)"><i class="icon-icon28"></i></a>
+                        <ul>
+                            <li><a class="active" href="javascript:void(0)">1</a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                        </ul>
+                        <a class="arrow-next" href="javascript:void(0)"><i class="icon-icon28"></i></a>
+                    </div>
+                </div>
+                <div class="messages-content tab-item unreadTab">
+                    <div class="messages-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Имя друга">
+                                <button><i class="icon-icon25"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-item">
+                        <a href="profile-messages2.html"></a>
+                        <span class="del"></span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="javascript:void(0)"></a>
+                            <div class="avatar-text">
+                                <h4><a href="javascript:void(0)"></a>Иван Иванов22</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <a href="profile-messages2.html"></a>
+                        <span class="del"></span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item2.png" alt="">
+                            <a href="javascript:void(0)"></a>
+                            <div class="avatar-text">
+                                <h4><a href="javascript:void(0)"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <a href="profile-messages2.html"></a>
+                        <span class="del"></span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item3.png" alt="">
+                            <a href="javascript:void(0)"></a>
+                            <div class="avatar-text">
+                                <h4><a href="javascript:void(0)"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <a class="arrow-prev" href="javascript:void(0)"><i class="icon-icon28"></i></a>
+                        <ul>
+                            <li><a class="active" href="javascript:void(0)">1</a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                        </ul>
+                        <a class="arrow-next" href="javascript:void(0)"><i class="icon-icon28"></i></a>
+                    </div>
+                </div>
+                <div class="messages-content tab-item importantTab">
+                    <div class="messages-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Имя друга">
+                                <button><i class="icon-icon25"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-item">
+                        <a href="profile-messages2.html"></a>
+                        <span class="del"></span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="javascript:void(0)"></a>
+                            <div class="avatar-text">
+                                <h4><a href="javascript:void(0)"></a>Иван Иванов33</h4>
                                 <span>18:09</span>
                             </div>
                         </div>

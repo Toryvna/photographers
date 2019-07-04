@@ -9,14 +9,6 @@ $(document).ready(function () {
     });
 
     // Скрыть при клике меню с опциями на публицакии
-    // $('.publication_heading-options').hover(
-    //     function(){
-    //         $(this).addClass('show');
-    //     },
-    //     function(){
-    //         $(this).removeClass('show');
-    //     }
-    // );
 
     if ($(window).width() < 1025) {
         $(document).mouseup(function (e) {
@@ -31,8 +23,10 @@ $(document).ready(function () {
     }
 
     $('.publication_heading-options a').on('click', function () {
-        $('.publication_heading-options').toggleClass('show');
+        $('.publication_heading-options.show').removeClass('show');
+        $(this).parent().toggleClass('show');
     });
+    
 
     $('.likeBtn').on('click', function () {
         $(this).toggleClass('color');

@@ -122,54 +122,56 @@
                 <div class="projects-nav">
                     <div class="nav">
                         <ul>
-                            <li class="active"><a href="javascript:void(0)">Я заказчик</a></li>
-                            <li><a href="javascript:void(0)">Я исполнитель</a></li>
+                            <li class="filter-items filter-items active" data-tab="customer"><a href="javascript:void(0)">Я заказчик</a></li>
+                            <li class="filter-items filter-items" data-tab="executor"><a href="javascript:void(0)">Я исполнитель</a></li>
                         </ul>
                         <a class="desc create-project" href="javascript:void(0)">Создать проект</a>
                     </div>
-                    <form class="clearfix">
-                        <div class="search">
-                            <input type="text" placeholder="Название проекта">
-                            <button><i class="icon-icon25"></i></button>
-                        </div>
-                        <div class="select">
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                                <option>Параметры</option>
-                                <option>Параметры 1</option>
-                                <option>Параметры 2</option>
-                                <option>Параметры 3</option>
-                                <option>Параметры 4</option>
-                                <option>Параметры 5</option>
-                            </select>
-                        </div>
-                    </form>
-                    <div class="checkbox-items">
-                        <ul>
-                            <li>
-                                <input id="q" type="checkbox" checked>
-                                <label for="q">Открытые проекты (88)</label>
-                            </li>
-                            <li>
-                                <input id="w" type="checkbox">
-                                <label for="w">Проекты в работе</label>
-                            </li>
-                            <li>
-                                <input id="e" type="checkbox">
-                                <label for="e">Завершенные проекты</label>
-                            </li>
-                            <li>
-                                <input id="r" type="checkbox">
-                                <label for="r">Закрытые проекты</label>
-                            </li>
-                            <li>
-                                <input id="t" type="checkbox">
-                                <label for="t">Отклоненные проекты</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="mabile create-project" href="javascript:void(0)">Создать проект</a>
                 </div>
-                <div class="projects-content">
+                <div class="projects-content active tab-item customer">
+                    <div class="projects-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Название проекта">
+                                <button><i class="icon-icon25"></i></button>
+                            </div>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                    <option>Параметры</option>
+                                    <option>Параметры 1</option>
+                                    <option>Параметры 2</option>
+                                    <option>Параметры 3</option>
+                                    <option>Параметры 4</option>
+                                    <option>Параметры 5</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="checkbox-items">
+                            <ul>
+                                <li>
+                                    <input id="q" type="checkbox" checked>
+                                    <label for="q">Открытые проекты (88)</label>
+                                </li>
+                                <li>
+                                    <input id="w" type="checkbox">
+                                    <label for="w">Проекты в работе</label>
+                                </li>
+                                <li>
+                                    <input id="e" type="checkbox">
+                                    <label for="e">Завершенные проекты</label>
+                                </li>
+                                <li>
+                                    <input id="r" type="checkbox">
+                                    <label for="r">Закрытые проекты</label>
+                                </li>
+                                <li>
+                                    <input id="t" type="checkbox">
+                                    <label for="t">Отклоненные проекты</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="mabile create-project" href="javascript:void(0)">Создать проект</a>
+                    </div>
                     <div class="projects-items">
                         <div class="projects-item clearfix">
                             <a href="project_сard-customer.html"></a>
@@ -177,6 +179,153 @@
                                 <div class="avatar">
                                     <img src="../img/projects-item-img.png" alt="">
                                     <h3>Иван Иванов</h3>
+                                    <span>Новосибирск</span>
+                                </div>
+                                <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum є,
+                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                    гранку
+                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                    століть,
+                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            </div>
+                            <div class="sum clearfix">
+                                <span>3000 RUB</span>
+                                <ul>
+                                    <li>24 заявки</li>
+                                    <li>Открыт 17 дней</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="projects-item clearfix">
+                            <a href="project_сard-customer.html"></a>
+                            <div class="text">
+                                <div class="avatar">
+                                    <img src="../img/projects-item-img.png" alt="">
+                                    <h3>Иван Иванов</h3>
+                                    <span>Новосибирск</span>
+                                </div>
+                                <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum є,
+                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                    гранку
+                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                    століть,
+                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            </div>
+                            <div class="sum clearfix">
+                                <span>3000 RUB</span>
+                                <ul>
+                                    <li>24 заявки</li>
+                                    <li>Открыт 17 дней</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="projects-item clearfix">
+                            <a href="project_сard-customer.html"></a>
+                            <div class="text">
+                                <div class="avatar">
+                                    <img src="../img/projects-item-img.png" alt="">
+                                    <h3>Иван Иванов</h3>
+                                    <span>Новосибирск</span>
+                                </div>
+                                <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum є,
+                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                    гранку
+                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                    століть,
+                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            </div>
+                            <div class="sum clearfix">
+                                <span>3000 RUB</span>
+                                <ul>
+                                    <li>24 заявки</li>
+                                    <li>Открыт 17 дней</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="projects-item clearfix">
+                            <a href="project_сard-customer.html"></a>
+                            <div class="text">
+                                <div class="avatar">
+                                    <img src="../img/projects-item-img.png" alt="">
+                                    <h3>Иван Иванов</h3>
+                                    <span>Новосибирск</span>
+                                </div>
+                                <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum є,
+                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                    гранку
+                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                    століть,
+                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            </div>
+                            <div class="sum clearfix">
+                                <span>3000 RUB</span>
+                                <ul>
+                                    <li>24 заявки</li>
+                                    <li>Открыт 17 дней</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-content tab-item executor">
+                    <div class="projects-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Название проекта">
+                                <button><i class="icon-icon25"></i></button>
+                            </div>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                    <option>Параметры</option>
+                                    <option>Параметры 1</option>
+                                    <option>Параметры 2</option>
+                                    <option>Параметры 3</option>
+                                    <option>Параметры 4</option>
+                                    <option>Параметры 5</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="checkbox-items">
+                            <ul>
+                                <li>
+                                    <input id="q" type="checkbox" checked>
+                                    <label for="q">Открытые проекты (88)</label>
+                                </li>
+                                <li>
+                                    <input id="w" type="checkbox">
+                                    <label for="w">Проекты в работе</label>
+                                </li>
+                                <li>
+                                    <input id="e" type="checkbox">
+                                    <label for="e">Завершенные проекты</label>
+                                </li>
+                                <li>
+                                    <input id="r" type="checkbox">
+                                    <label for="r">Закрытые проекты</label>
+                                </li>
+                                <li>
+                                    <input id="t" type="checkbox">
+                                    <label for="t">Отклоненные проекты</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="mabile create-project" href="javascript:void(0)">Создать проект</a>
+                    </div>
+                    <div class="projects-items">
+                        <div class="projects-item clearfix">
+                            <a href="project_сard-customer.html"></a>
+                            <div class="text">
+                                <div class="avatar">
+                                    <img src="../img/projects-item-img.png" alt="">
+                                    <h3>Иван Иванов2</h3>
                                     <span>Новосибирск</span>
                                 </div>
                                 <h4>Необходимо снять на видео 8 мероприятий</h4>

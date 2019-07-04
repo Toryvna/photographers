@@ -137,7 +137,6 @@ div#video2 {
 
     .projects {
         .projects-nav {
-            margin-bottom: 25px;
 
             .nav {
                 position: relative;
@@ -203,6 +202,67 @@ div#video2 {
                     }
                 }
             }
+
+            
+        }
+
+        .btns-blk {
+            margin-bottom: 30px;
+
+            &.desktop {
+                display: none;
+            }
+
+            a {
+                display: block;
+                width: 233px;
+                text-align: center;
+                margin: 0 auto;
+                background-color: #27283c;
+                color: #fff;
+                font-size: 16px;
+                border: 2px solid #27283c;
+                background-color: #27283c;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                -o-transition: all .5s;
+                transition: all .5s;
+                padding: 7px 0;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #27283c;
+
+                }
+
+                &:first-of-type {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .create-project {
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            padding: 7px 57px;
+            border: 2px solid #27283c;
+            background-color: #27283c;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #27283c;
+                background: transparent;
+            }
+        }
+        .projects-search{
+            margin-bottom: 25px;
 
             form {
                 margin-bottom: 17px;
@@ -378,66 +438,13 @@ div#video2 {
                     }
                 }
             }
-
-            .create-project {
-                margin: 0 auto;
-                color: #ffffff;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 22px;
-                padding: 7px 57px;
-                border: 2px solid #27283c;
-                background-color: #27283c;
-                -webkit-transition: all 0.5s;
-                -moz-transition: all 0.5s;
-                -ms-transition: all 0.5s;
-                -o-transition: all 0.5s;
-                transition: all 0.5s;
-
-                &:hover {
-                    color: #27283c;
-                    background: transparent;
-                }
-            }
-
-            .btns-blk {
-                margin-bottom: 30px;
-
-                &.desktop {
-                    display: none;
-                }
-
-                a {
-                    display: block;
-                    width: 233px;
-                    text-align: center;
-                    margin: 0 auto;
-                    background-color: #27283c;
-                    color: #fff;
-                    font-size: 16px;
-                    border: 2px solid #27283c;
-                    background-color: #27283c;
-                    -webkit-transition: all .5s;
-                    -moz-transition: all .5s;
-                    -ms-transition: all .5s;
-                    -o-transition: all .5s;
-                    transition: all .5s;
-                    padding: 7px 0;
-
-                    &:hover {
-                        background-color: #fff;
-                        color: #27283c;
-
-                    }
-
-                    &:first-of-type {
-                        margin-bottom: 15px;
-                    }
-                }
-            }
         }
 
         .projects-content {
+            display: none;
+            &.active{
+                display: block;
+            }
             .projects-items {
                 .projects-item {
                     border-radius: 3px;
@@ -587,7 +594,6 @@ div#video2 {
 
     .profile-company {
         .projects-nav {
-            margin-bottom: 25px;
 
             .nav {
                 position: relative;
@@ -652,6 +658,30 @@ div#video2 {
                     }
                 }
             }
+            
+        }
+        .create-project {
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            padding: 7px 57px;
+            border: 2px solid #27283c;
+            background-color: #27283c;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #27283c;
+                background: transparent;
+            }
+        }
+        .projects-search{
+            margin-bottom: 25px;
 
             form {
                 margin-bottom: 17px;
@@ -827,26 +857,11 @@ div#video2 {
                     }
                 }
             }
-
-            .create-project {
-                margin: 0 auto;
-                color: #ffffff;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 22px;
-                padding: 7px 57px;
-                border: 2px solid #27283c;
-                background-color: #27283c;
-                -webkit-transition: all 0.5s;
-                -moz-transition: all 0.5s;
-                -ms-transition: all 0.5s;
-                -o-transition: all 0.5s;
-                transition: all 0.5s;
-
-                &:hover {
-                    color: #27283c;
-                    background: transparent;
-                }
+        }
+        .company-content{
+            display: none;
+            &.active{
+                display: block;
             }
         }
 
@@ -2371,7 +2386,6 @@ div#video2 {
 
     .profile-messages {
         .projects-nav {
-            margin-bottom: 10px;
 
             .nav {
                 position: relative;
@@ -2708,6 +2722,30 @@ div#video2 {
                     }
                 }
             }
+        }
+
+        .create-project {
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            padding: 7px 57px;
+            border: 2px solid #27283c;
+            background-color: #27283c;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #27283c;
+                background: transparent;
+            }
+        }
+        .messages-search{
+            margin-bottom: 10px;
 
             form {
                 margin-bottom: 17px;
@@ -2883,30 +2921,13 @@ div#video2 {
                     }
                 }
             }
-
-            .create-project {
-                margin: 0 auto;
-                color: #ffffff;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 22px;
-                padding: 7px 57px;
-                border: 2px solid #27283c;
-                background-color: #27283c;
-                -webkit-transition: all 0.5s;
-                -moz-transition: all 0.5s;
-                -ms-transition: all 0.5s;
-                -o-transition: all 0.5s;
-                transition: all 0.5s;
-
-                &:hover {
-                    color: #27283c;
-                    background: transparent;
-                }
-            }
         }
 
         .messages-content {
+            display: none;
+            &.active{
+                display: block;
+            }
             .messages-item {
                 cursor: pointer;
                 padding-top: 15px;
@@ -3436,6 +3457,10 @@ div#video2 {
         }
 
         .reviews-content {
+            display: none;
+            &.active{
+                display: block;
+            }
             .reviews-item {
                 position: relative;
                 margin-bottom: 20px;
@@ -3547,7 +3572,6 @@ div#video2 {
 
     .profile-bookmarks {
         .projects-nav {
-            margin-bottom: 10px;
 
             .nav {
                 position: relative;
@@ -3608,6 +3632,30 @@ div#video2 {
                     }
                 }
             }
+        }
+
+        .create-project {
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            padding: 7px 57px;
+            border: 2px solid #27283c;
+            background-color: #27283c;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #27283c;
+                background: transparent;
+            }
+        }
+        .bookmarks-search{
+            margin-bottom: 10px;
 
             form {
                 margin-bottom: 17px;
@@ -3783,30 +3831,13 @@ div#video2 {
                     }
                 }
             }
-
-            .create-project {
-                margin: 0 auto;
-                color: #ffffff;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 22px;
-                padding: 7px 57px;
-                border: 2px solid #27283c;
-                background-color: #27283c;
-                -webkit-transition: all 0.5s;
-                -moz-transition: all 0.5s;
-                -ms-transition: all 0.5s;
-                -o-transition: all 0.5s;
-                transition: all 0.5s;
-
-                &:hover {
-                    color: #27283c;
-                    background: transparent;
-                }
-            }
         }
 
         .bookmarks-content {
+            display: none;
+            &.active{
+                display: block;
+            }
             .year-items {
                 margin: 0;
             }
@@ -4505,7 +4536,7 @@ div#video2 {
                         padding: 17px 10px 17px 25px;
                         position: absolute;
                         background: url('../img/optionBg.png') no-repeat 100% 0%;
-                        background-size: contain;
+                        background-size: cover;
 
                         ul {
                             li {
@@ -5099,6 +5130,10 @@ div#video2 {
         }
 
         .news-content {
+            display: none;
+            &.active{
+                display: block;
+            }
             .news-item {
                 padding: 15px 0;
                 position: relative;
@@ -6385,6 +6420,8 @@ div#video2 {
                 .nav {
                     position: relative;
                 }
+            }
+            .projects-search{
 
                 form {
                     position: relative;
@@ -6502,10 +6539,8 @@ div#video2 {
                         min-width: 160px;
                     }
                 }
-
-                .create-project {
-                    margin-left: 0;
-                }
+            }
+            .projects-search{
 
                 form {
                     position: relative;
@@ -6544,6 +6579,10 @@ div#video2 {
                         }
                     }
                 }
+            }
+
+            .create-project {
+                margin-left: 0;
             }
 
             .company-item {
@@ -6890,6 +6929,8 @@ div#video2 {
                         }
                     }
                 }
+            }
+            .messages-search{
 
                 form {
                     position: relative;
@@ -7066,6 +7107,8 @@ div#video2 {
                 .nav {
                     position: relative;
                 }
+            }
+            .bookmarks-search{
 
                 form {
                     position: relative;
@@ -7876,48 +7919,50 @@ div#video2 {
                     }
                 }
 
+                
+            }
+            .btns-blk {
+                margin-bottom: 20px;
+
+                &.desktop {
+                    display: flex;
+                }
+
+                &.mobile {
+                    display: none;
+                }
+
+                a {
+                    width: 165px;
+                    padding: 15px 0;
+                    margin: 0;
+                    position: inherit;
+
+                    &:first-of-type {
+                        margin-bottom: 0;
+                        margin-right: 16px;
+                    }
+                }
+            }
+            .create-project {
+                right: 0;
+                z-index: 3;
+                bottom: 15px;
+                padding: 14px 45px;
+                position: absolute;
+            }
+            .projects-search{
+
                 form {
                     .search {
                         width: 290px;
                     }
                 }
 
-                .create-project {
-                    right: 0;
-                    z-index: 3;
-                    bottom: 15px;
-                    padding: 14px 45px;
-                    position: absolute;
-                }
-
                 .checkbox-items {
                     ul {
                         li {
                             width: 292px;
-                        }
-                    }
-                }
-
-                .btns-blk {
-                    margin-bottom: 20px;
-
-                    &.desktop {
-                        display: flex;
-                    }
-
-                    &.mobile {
-                        display: none;
-                    }
-
-                    a {
-                        width: 165px;
-                        padding: 15px 0;
-                        margin: 0;
-                        position: inherit;
-
-                        &:first-of-type {
-                            margin-bottom: 0;
-                            margin-right: 16px;
                         }
                     }
                 }
@@ -7983,19 +8028,13 @@ div#video2 {
                         }
                     }
                 }
+            }
+            .projects-search{
 
                 form {
                     .search {
                         width: 290px;
                     }
-                }
-
-                .create-project {
-                    right: 0;
-                    z-index: 3;
-                    bottom: 15px;
-                    padding: 6px 21px;
-                    position: absolute;
                 }
 
                 .checkbox-items {
@@ -8005,6 +8044,14 @@ div#video2 {
                         }
                     }
                 }
+            }
+
+            .create-project {
+                right: 0;
+                z-index: 3;
+                bottom: 15px;
+                padding: 6px 21px;
+                position: absolute;
             }
 
             .company-item {
@@ -8298,19 +8345,21 @@ div#video2 {
                         }
                     }
                 }
+            }
+
+            .create-project {
+                right: 0;
+                z-index: 3;
+                bottom: 15px;
+                padding: 14px 45px;
+                position: absolute;
+            }
+            .messages-search{
 
                 form {
                     .search {
                         width: 290px;
                     }
-                }
-
-                .create-project {
-                    right: 0;
-                    z-index: 3;
-                    bottom: 15px;
-                    padding: 14px 45px;
-                    position: absolute;
                 }
 
                 .checkbox-items {
@@ -8442,19 +8491,21 @@ div#video2 {
                         }
                     }
                 }
+            }
+
+            .create-project {
+                right: 0;
+                z-index: 3;
+                bottom: 15px;
+                padding: 14px 45px;
+                position: absolute;
+            }
+            .bookmarks-search{
 
                 form {
                     .search {
                         width: 290px;
                     }
-                }
-
-                .create-project {
-                    right: 0;
-                    z-index: 3;
-                    bottom: 15px;
-                    padding: 14px 45px;
-                    position: absolute;
                 }
 
                 .checkbox-items {
@@ -9034,12 +9085,9 @@ div#video2 {
             &.top {
                 margin-top: -30px;
             }
-
-            .projects-nav {
-                .btns-blk {
-                    a {
-                        width: 208px;
-                    }
+            .btns-blk {
+                a {
+                    width: 208px;
                 }
             }
         }

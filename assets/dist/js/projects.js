@@ -83,6 +83,17 @@ $(document).ready(function(){
           source: availableTags
         });
     } );
+
+    //Tabs
+    $('.js-item').on('click', function(){
+        var dataTab = $(this).data('items');
+        $('.js-item').removeClass('active');
+        $('.js-content').removeClass('active');
+        
+        $(this).addClass('active');
+        $('#content-' + dataTab).addClass('active');
+
+    });
     
 
 });

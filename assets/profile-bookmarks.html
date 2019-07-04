@@ -51,25 +51,27 @@
             <div class="projects-nav">
                 <div class="nav">
                     <ul>
-                        <li class="active"><a href="javascript:void(0)">Публикации</a></li>
-                        <li><a href="javascript:void(0)">Фото</a></li>
-                        <li><a href="javascript:void(0)">Видео</a></li>
-                        <li><a href="javascript:void(0)">Специалисты</a></li>
-                        <li><a href="javascript:void(0)">Компании</a></li>
-                        <li><a href="javascript:void(0)">Группы</a></li>
-                        <li><a href="javascript:void(0)">Мероприятия</a></li>
-                        <li><a href="javascript:void(0)">Проекты</a></li>
-                        <li><a href="javascript:void(0)">Товары</a></li>
+                        <li class="filter-items filter-items active" data-tab="publicationsTab"><a href="javascript:void(0)">Публикации</a></li>
+                        <li class="filter-items filter-items" data-tab="photosTab"><a href="javascript:void(0)">Фото</a></li>
+                        <li class="filter-items filter-items" data-tab="videoTabs"><a href="javascript:void(0)">Видео</a></li>
+                        <li class="filter-items filter-items" data-tab="specTab"><a href="javascript:void(0)">Специалисты</a></li>
+                        <li class="filter-items filter-items" data-tab="companyTab"><a href="javascript:void(0)">Компании</a></li>
+                        <li class="filter-items filter-items" data-tab="groupTab"><a href="javascript:void(0)">Группы</a></li>
+                        <li class="filter-items filter-items" data-tab="actTab"><a href="javascript:void(0)">Мероприятия</a></li>
+                        <li class="filter-items filter-items" data-tab="projectsTab"><a href="javascript:void(0)">Проекты</a></li>
+                        <li class="filter-items filter-items" data-tab="productsTab"><a href="javascript:void(0)">Товары</a></li>
                     </ul>
                 </div>
-                <form class="clearfix">
-                    <div class="search">
-                        <input type="text" placeholder="Название">
-                        <button><i class="icon-icon25"></i></button>
-                    </div>
-                </form>
             </div>
-            <div class="bookmarks-content">
+            <div class="bookmarks-content active tab-item publicationsTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
                <div class="year-items">
                     <div class="year-item clearfix">
                         <div class="year-item-img" style="background: url('../img/bookmarks-item-img1.png') no-repeat 50% 50%; background-size: cover;">
@@ -142,6 +144,294 @@
                         </div>
                     </div>
 
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item photosTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img2.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img2.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img5.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img5.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img6.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img6.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img7.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img7.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img8.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img8.png"></a>
+                        </div>
+                    </div>
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img1.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img2.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img5.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img5.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img6.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img6.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img7.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img7.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img8.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img8.png"></a>
+                        </div>
+                    </div>
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img5.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img5.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img6.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img6.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img7.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img7.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img8.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img8.png"></a>
+                        </div>
+                    </div>
+
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item videoTabs">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img2.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img1.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item specTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img1.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+    
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item companyTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+    
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item groupTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img1.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+    
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item actTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+    
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item projectsTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img1.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                    </div>
+    
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+            </div>
+            <div class="bookmarks-content active tab-item productsTab">
+                <div class="bookmarks-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                </div>
+               <div class="year-items">
+                    <div class="year-item clearfix">
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img4.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img1.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img3.png"></a>
+                        </div>
+                        <div class="year-item-img" style="background: url('../img/bookmarks-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/bookmarks-item-img2.png"></a>
+                        </div>
+                    </div>
+    
                     <!-- build:section layout.pagination-->
                     <!-- /build -->
                 </div>

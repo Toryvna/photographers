@@ -54,7 +54,6 @@ $(document).ready(function () {
     }
     AddSlider();
 
-
     //Открытие внутреннего меню
     $('#leftToggle-menu').on('click', function () {
         $('.specialists_page-menu').toggleClass('open');
@@ -111,28 +110,18 @@ $(document).ready(function () {
         });
     });
 
-    // Скрипт для табов
-    var tabItem = $('.js-item');
-    var tabContent = $('.js-content');
+    //Tabs
+    $('.js-item').on('click', function(){
+        var dataTab = $(this).data('items');
+        $('.js-item').removeClass('active');
+        $('.js-content').removeClass('active');
+        
+        $(this).addClass('active');
+        $('#content-' + dataTab).addClass('active');
 
-    for (var i = 0; i < tabItem.length; i++) {
-        tabItem.on('click', function () {
-
-            var currentData = $(this).data('items');
-            var currentContent = $('#content-' + currentData);
-
-            for (var j = 0; j < tabContent.length; j++) {
-                tabContent.removeClass('active');
-            }
-
-            for (var k = 0; k < tabItem.length; k++) {
-                tabItem.removeClass('active');
-            }
-
-            currentContent.addClass('active');
-            $(this).addClass('active');
-        });
-    }
+        $('.performer__gallery-slider').slick('unslick');
+        AddSlider();
+    });
 });
 
 

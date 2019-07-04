@@ -53,9 +53,9 @@
                 <div class="projects-nav">
                     <div class="nav">
                         <ul>
-                            <li class="active"><a href="javascript:void(0)">Все сообщение</a></li>
-                            <li><a href="javascript:void(0)">Непрочитанные 3</a></li>
-                            <li><a href="javascript:void(0)">Важные сообщения</a></li>
+                            <li class="filter-items filter-items active" data-tab="allTab"><a href="javascript:void(0)">Все сообщение</a></li>
+                            <li class="filter-items filter-items" data-tab="unreadTab"><a href="javascript:void(0)">Непрочитанные 3</a></li>
+                            <li class="filter-items filter-items" data-tab="importantTab"><a href="javascript:void(0)">Важные сообщения</a></li>
                         </ul>
                     </div>
                     <div class="heading">
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="messages-content">
+                <div class="messages-content active tab-item allTab">
                     <div class="messages-item">
                         <span class="del"></span>
                         <span class="share"><i class="icon-icon9"></i></span>
@@ -221,6 +221,128 @@
                                 підбірку зразків шрифтів. "Риба" не тільки успішно пережила пять століть, але й
                                 прижилася
                                 в електронному верстуванні, залишаючись по суті незмінною.</p>
+                        </div>
+                    </div>
+
+                    <div class="writeMessage">
+                        <form>
+                            <div class="writeMessage-file">
+                                <input type="file" name="file" id="file" class="inputfile" accept="image/*">
+                                <label for="file"><i class="icon-icon26"></i></label>
+                            </div>
+                            <div class="writeMessage-text">
+                                <textarea class="checkTextarea" type="text"></textarea>
+                                <button><i class="icon-icon29"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+                <div class="messages-content tab-item unreadTab">
+                    <div class="messages-item">
+                        <span class="del"></span>
+                        <span class="share"><i class="icon-icon9"></i></span>
+                        <span class="info">!</span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет222. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <span class="del"></span>
+                        <span class="share"><i class="icon-icon9"></i></span>
+                        <span class="info">!</span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <span class="del"></span>
+                        <span class="share"><i class="icon-icon9"></i></span>
+                        <span class="info">!</span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                є, фактично,
+                                стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та
+                                склав на ній
+                                підбірку зразків шрифтів. "Риба" не тільки успішно пережила пять століть, але й
+                                прижилася
+                                в електронному верстуванні, залишаючись по суті незмінною.</p>
+                        </div>
+                    </div>
+
+                    <div class="writeMessage">
+                        <form>
+                            <div class="writeMessage-file">
+                                <input type="file" name="file" id="file" class="inputfile" accept="image/*">
+                                <label for="file"><i class="icon-icon26"></i></label>
+                            </div>
+                            <div class="writeMessage-text">
+                                <textarea class="checkTextarea" type="text"></textarea>
+                                <button><i class="icon-icon29"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- build:section layout.pagination-->
+                    <!-- /build -->
+                </div>
+                <div class="messages-content tab-item importantTab">
+                    <div class="messages-item">
+                        <span class="del"></span>
+                        <span class="share"><i class="icon-icon9"></i></span>
+                        <span class="info">!</span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет333. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <span class="del"></span>
+                        <span class="share"><i class="icon-icon9"></i></span>
+                        <span class="info">!</span>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
                         </div>
                     </div>
 
