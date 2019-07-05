@@ -8,6 +8,11 @@ $(document).ready(function(){
         $('#mobile-mainMenu').removeClass('show');
     });
 
+    //open header popup
+    $('.userName').on('click', function(){
+        $(this).parent().toggleClass('active');
+    });
+
     //header search
     $('header form input').on('click', function(){
         $('#mobile-mainMenu').removeClass('show');

@@ -53,6 +53,19 @@ header{
                 margin-left: auto;
                 width: 120px;
                 border-left: 2px solid #2b2b2b;
+                .userName{
+                    p{
+                        width: 90px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-left: 11px;
+                        color: #222222;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                        white-space: nowrap;
+                    }
+                }
                 .jcf-select {
                     position: relative;
                     display: block;
@@ -84,6 +97,21 @@ header{
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
+                    }
+                    .jcf-select-drop{
+                        border: 1px solid #bcc2cf;
+                        background-color: #f7f7f7;
+                        padding: 0;
+                        width: 172px!important;
+                        right: 0;
+                        top: calc(100% + 6px);
+                        .jcf-option{
+                            color: #022222;
+                            &.jcf-selected,
+                            &:hover {
+                                background-color: transparent;
+                            }
+                        }
                     }
                 }
             }
