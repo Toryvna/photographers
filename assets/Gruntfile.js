@@ -138,6 +138,8 @@ grunt.initConfig({
 						pagination:'<%= fixturesPath %>/templates/pagination.html',
 						notifications:'<%= fixturesPath %>/templates/notifications.html',
 						header_notification_popup:'<%= fixturesPath %>/templates/header-notification-popup.html',
+						popup_to_delete_messages:'<%= fixturesPath %>/templates/popup-to-delete-messages.html',
+						popup_to_delete_single_message:'<%= fixturesPath %>/templates/popup-to-delete-single-message.html',
 						
 					}
                 },

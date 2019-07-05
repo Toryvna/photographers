@@ -76,4 +76,27 @@ $(document).ready(function () {
         $(this).find('.icon-icon9').toggleClass('color');
     });
 
+    //попап удаления диалога
+    $('.open-deleteDialogue').on("click",function(){
+        $('.overlay-deleteDialogue').addClass('active');
+    });
+    $('.overlay-deleteDialogue .closeBtn, .overlay-deleteDialogue .close').on("click",function(){
+        $('.overlay-deleteDialogue').removeClass('active');
+    }); 
+
+    $('.open-successfulDel').on("click",function(){
+        $('.overlay-successfulDel').addClass('active');
+    });
+    $('.overlay-successfulDel .closeBtn, .overlay-successfulDel .close').on("click",function(){
+        $('.overlay-successfulDel').removeClass('active');
+    }); 
+    
+    //попап удаления сообщения
+    $('.open-deleteMsg').on("click",function(){
+        $('.overlay-deleteMsg').addClass('active');
+    });
+    $('.overlay-deleteMsg .closeBtn, .overlay-deleteMsg .close').on("click",function(){
+        $('.overlay-deleteMsg').removeClass('active');
+    }); 
+
 });
