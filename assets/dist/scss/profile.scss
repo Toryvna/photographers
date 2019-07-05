@@ -4,6 +4,8 @@
 @import "libs/video-js";
 @import "viewVideo.css";
 @import "libs/popup-to-delete-messages";
+@import "libs/creation-chat";
+
 
 
 
@@ -2751,17 +2753,19 @@ div#video2 {
             }
         }
         .messages-search{
-            margin-bottom: 10px;
-
+            border-bottom: 1px solid #e1e1e1;
+            border-top: 1px solid #e1e1e1;
+            margin: 0 -15px 10px;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             form {
-                margin-bottom: 17px;
-
+                width: calc(100% - 45px);
                 .search {
                     width: 100%;
                     position: relative;
                     padding: 5px 30px 5px 0;
-                    border-top: 1px solid #e1e1e1;
-                    border-bottom: 1px solid #e1e1e1;
 
                     input {
                         width: 100%;
@@ -2858,6 +2862,12 @@ div#video2 {
                             transform: translate(0, -50%);
                         }
                     }
+                }
+            }
+            .creationChat{
+                i{
+                    color: #000;
+                    font-size: 20px;
                 }
             }
 
@@ -7899,12 +7909,10 @@ div#video2 {
                 }
             }
             .messages-search{
-
+                margin: 0;
+                padding: 0;
                 form {
                     position: relative;
-                    margin-bottom: 9px;
-                    border-top: 1px solid #e1e1e1;
-                    border-bottom: 1px solid #e1e1e1;
 
                     .search {
                         width: 55%;
@@ -7926,6 +7934,12 @@ div#video2 {
                         transform: translate(0, -50%);
                     }
                 }
+                .creationChat{
+                    position: absolute;
+                    right: 10px;
+                    top: -4px;
+                }
+
 
                 .checkbox-items {
                     ul {

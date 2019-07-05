@@ -43,7 +43,7 @@ $(document).ready(function(){
         $(this).parent().removeClass('open');
     });
 
-    $('.notifications_popup-open').bind('click', function (ev) {
+    $('.notifications_popup-open').on('click', function (ev) {
         if (screen.width > 1023 ) {
             var x = ev.clientX ;
             $(".notifications_popup").css('left', x - 177);

@@ -32,4 +32,51 @@ $(document).ready(function(){
         $(this).css('height', '1px');
         $(this).css('height', '' + $(this).prop('scrollHeight') + "px");
     });
+
+    //попап удаления диалога
+    $('.open-deleteDialogue').on("click",function(){
+        $('.overlay-deleteDialogue').addClass('active');
+    });
+    $('.overlay-deleteDialogue .closeBtn, .overlay-deleteDialogue .close').on("click",function(){
+        $('.overlay-deleteDialogue').removeClass('active');
+    }); 
+
+    $('.open-successfulDel').on("click",function(){
+        $('.overlay-successfulDel').addClass('active');
+    });
+    $('.overlay-successfulDel .closeBtn, .overlay-successfulDel .close').on("click",function(){
+        $('.overlay-successfulDel').removeClass('active');
+    }); 
+    
+    //попап удаления сообщения
+    $('.open-deleteMsg').on("click",function(){
+        $('.overlay-deleteMsg').addClass('active');
+    });
+    $('.overlay-deleteMsg .closeBtn, .overlay-deleteMsg .close').on("click",function(){
+        $('.overlay-deleteMsg').removeClass('active');
+    }); 
+
+    //создание беседы
+    $('.creationChat_popup .closeBtn').on('click', function(){
+        $(this).parent().removeClass('open');
+    });
+
+    $('.creationChat').on('click', function (ev) {
+        $(".creationChat_popup").toggleClass('open');
+        console.log('click');
+        if (screen.width > 1024 ) {
+            var x = ev.clientX ;
+            var y = ev.clientY ;
+            $(".creationChat_popup").css({
+                "top":y + 20,
+                // "right": 'inherit',
+                "left": x - 396,
+            });
+        }else{
+            var y = ev.clientY ;
+            $(".creationChat_popup").css({
+                "top":y + 20,
+            });
+        }
+    });
 });

@@ -9,9 +9,44 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/profile_menu.css">
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/mCustomScrollbar.css">
 </head>
 
 <body>
+
+    <div class="notifications_popup">
+        <div class="closeBtn"></div>
+        <div class="heading">
+            <p>Мои уведомления</p>
+        </div>
+        <div class="content">
+            <div class="item">
+                <div class="item-img">
+                    <img src="../img/search_page/publication-avatar.png" alt="avatar">
+                </div>
+                <div class="item-msg">
+                    <p class="author">
+                        Иван Иванов
+                    </p>
+                    <p class="text">А возможна ли выездная съем...</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="../img/search_page/publication-avatar.png" alt="avatar">
+                </div>
+                <div class="item-msg">
+                    <p class="author">
+                        Иван Иванов
+                    </p>
+                    <div class="text">
+                        <p>А возможна ли выездная съем...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- попап удалить диалог -->
     <div class="overlay-deleteDialogue overlayPopup">
         <div class="close"></div>
@@ -36,6 +71,101 @@
             <div class="content">
                 <p>История сообщений с пользователем Иван Иванов удалена.</p>
             </div>
+        </div>
+    </div>
+
+
+    <div class="creationChat_popup">
+        <div class="closeBtn"></div>
+        <div class="heading">
+            <p>Создать беседу</p>
+        </div>
+        <div class="content">
+            <div class="usersList mCustomScrollbar">
+                <div class="checkbox-item">
+                    <label for="user1">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user1" type="checkbox" checked>
+                </div>
+                <div class="checkbox-item">
+                    <label for="user2">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user2" type="checkbox">
+                </div>
+                <div class="checkbox-item">
+                    <label for="user3">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user3" type="checkbox">
+                </div>
+                <div class="checkbox-item">
+                    <label for="user4">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user4" type="checkbox">
+                </div>
+                <div class="checkbox-item">
+                    <label for="user5">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user5" type="checkbox">
+                </div>
+                <div class="checkbox-item">
+                    <label for="user6">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user6" type="checkbox" checked>
+                </div>
+                <div class="checkbox-item">
+                    <label for="user7">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user7" type="checkbox">
+                </div>
+                <div class="checkbox-item">
+                    <label for="user8">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user8" type="checkbox">
+                </div>
+                <div class="checkbox-item">
+                    <label for="user9">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user9" type="checkbox">
+                </div>
+                <div class="checkbox-item">
+                    <label for="user10">
+                        <img src="../img/messages-item1.png" alt="">
+                        Иван Иванов
+                    </label>
+                    <input id="user10" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <form>
+                <div class="flex-wrap">
+                    <div class="form-input">
+                        <i class="icon-icon5"></i>
+                        <input type="text" placeholder="Введите название беседы">
+                    </div>
+                    <div class="form-button">
+                        <button>Перейти к диалогу</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -163,6 +293,7 @@
                                 <button><i class="icon-icon25"></i></button>
                             </div>
                         </form>
+                        <a href="javascript:void(0)" class="creationChat"><i class="icon-add-people"></i></a>
                     </div>
                     <div class="messages-item">
                         <a href="profile-messages2.html"></a>
@@ -414,8 +545,10 @@
     <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/profile.min.js"></script>
+    <script src="../js/profile-messages.min.js"></script>
 </body>
 
 </html>
