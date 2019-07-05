@@ -68,6 +68,8 @@ grunt.initConfig({
 
 				'../markup/js/profile-reviews.min.js': ['dist/js/profile-reviews.js'],
 				'../markup/js/post-changes.min.js': ['dist/js/post-changes.js'],
+				'../markup/js/profile-bookmarks.min.js': ['dist/js/profile-bookmarks.js'],
+				
 
 				
 
