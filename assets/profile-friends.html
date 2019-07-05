@@ -54,30 +54,32 @@
             <div class="projects-nav">
                 <div class="nav">
                     <ul>
-                        <li class="active"><a href="javascript:void(0)">Все друзья 260</a></li>
-                        <li><a href="javascript:void(0)">Друзья онлайн 3</a></li>
-                        <li><a href="javascript:void(0)">Исходящие заявки</a></li>
-                        <li><a href="javascript:void(0)">Входящие заявки</a></li>
+                        <li class="filter-items filter-items active" data-tab="allTab"><a href="javascript:void(0)">Все друзья 260</a></li>
+                        <li class="filter-items filter-items" data-tab="onlineTab"><a href="javascript:void(0)">Друзья онлайн 3</a></li>
+                        <li class="filter-items filter-items" data-tab="outhgoingTab"><a href="javascript:void(0)">Исходящие заявки</a></li>
+                        <li class="filter-items filter-items" data-tab="inboxTab"><a href="javascript:void(0)">Входящие заявки</a></li>
                     </ul>
                 </div>
-                <form class="clearfix">
-                    <div class="search">
-                        <input type="text" placeholder="Имя друга">
-                        <button><i class="icon-icon25"></i></button>
-                    </div>
-                    <div class="select">
-                        <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                            <option>Параметры</option>
-                            <option>Параметры 1</option>
-                            <option>Параметры 2</option>
-                            <option>Параметры 3</option>
-                            <option>Параметры 4</option>
-                            <option>Параметры 5</option>
-                        </select>
-                    </div>
-                </form>
             </div>
-            <div class="friends-content">
+            <div class="friends-content active tab-item allTab">
+                <div class="profile-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Имя друга">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>Параметры</option>
+                                <option>Параметры 1</option>
+                                <option>Параметры 2</option>
+                                <option>Параметры 3</option>
+                                <option>Параметры 4</option>
+                                <option>Параметры 5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
                 <div class="friends-item clearfix">
                     <div class="option">
                         <div class="option-cintent">
@@ -327,6 +329,390 @@
                             </a>
                             <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-5.png">
                                 <img src="../img/company-foto7-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-content tab-item onlineTab">
+                <div class="profile-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Имя друга">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>Параметры</option>
+                                <option>Параметры 1</option>
+                                <option>Параметры 2</option>
+                                <option>Параметры 3</option>
+                                <option>Параметры 4</option>
+                                <option>Параметры 5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img1.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов2</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-1.png">
+                                <img src="../img/company-foto1-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-2.png">
+                                <img src="../img/company-foto1-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-3.png">
+                                <img src="../img/company-foto1-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-4.png">
+                                <img src="../img/company-foto1-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-5.png">
+                                <img src="../img/company-foto1-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img2.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-1.png">
+                                <img src="../img/company-foto2-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-2.png">
+                                <img src="../img/company-foto2-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-3.png">
+                                <img src="../img/company-foto2-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-4.png">
+                                <img src="../img/company-foto2-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-5.png">
+                                <img src="../img/company-foto2-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img3.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-1.png">
+                                <img src="../img/company-foto3-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-2.png">
+                                <img src="../img/company-foto3-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-3.png">
+                                <img src="../img/company-foto3-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-4.png">
+                                <img src="../img/company-foto3-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-5.png">
+                                <img src="../img/company-foto3-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-content tab-item outhgoingTab">
+                <div class="profile-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Имя друга">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>Параметры</option>
+                                <option>Параметры 1</option>
+                                <option>Параметры 2</option>
+                                <option>Параметры 3</option>
+                                <option>Параметры 4</option>
+                                <option>Параметры 5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img1.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов3</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-1.png">
+                                <img src="../img/company-foto1-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-2.png">
+                                <img src="../img/company-foto1-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-3.png">
+                                <img src="../img/company-foto1-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-4.png">
+                                <img src="../img/company-foto1-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-5.png">
+                                <img src="../img/company-foto1-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img2.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-1.png">
+                                <img src="../img/company-foto2-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-2.png">
+                                <img src="../img/company-foto2-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-3.png">
+                                <img src="../img/company-foto2-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-4.png">
+                                <img src="../img/company-foto2-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-5.png">
+                                <img src="../img/company-foto2-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img3.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-1.png">
+                                <img src="../img/company-foto3-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-2.png">
+                                <img src="../img/company-foto3-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-3.png">
+                                <img src="../img/company-foto3-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-4.png">
+                                <img src="../img/company-foto3-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-5.png">
+                                <img src="../img/company-foto3-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-content tab-item inboxTab">
+                <div class="profile-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Имя друга">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                        <div class="select">
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                <option>Параметры</option>
+                                <option>Параметры 1</option>
+                                <option>Параметры 2</option>
+                                <option>Параметры 3</option>
+                                <option>Параметры 4</option>
+                                <option>Параметры 5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img1.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов4</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-1.png">
+                                <img src="../img/company-foto1-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-2.png">
+                                <img src="../img/company-foto1-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-3.png">
+                                <img src="../img/company-foto1-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-4.png">
+                                <img src="../img/company-foto1-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-5.png">
+                                <img src="../img/company-foto1-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img2.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-1.png">
+                                <img src="../img/company-foto2-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-2.png">
+                                <img src="../img/company-foto2-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-3.png">
+                                <img src="../img/company-foto2-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-4.png">
+                                <img src="../img/company-foto2-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-5.png">
+                                <img src="../img/company-foto2-5.png" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="friends-item clearfix">
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Убрать из друзей</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="avatar clearfix">
+                        <img src="../img/company-img3.png" alt="">
+                        <a href="profile-expert.html" class="link"></a>
+                        <div class="avatar-text">
+                            <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                            <p>Фотостудия</p>
+                            <span>Москва</span>
+                            <a href="profile-messages2.html"><i class="icon-close-envelope"></i>Написать</a>
+                        </div>
+                    </div>
+                    <div class="friends-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-1.png">
+                                <img src="../img/company-foto3-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-2.png">
+                                <img src="../img/company-foto3-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-3.png">
+                                <img src="../img/company-foto3-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-4.png">
+                                <img src="../img/company-foto3-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-5.png">
+                                <img src="../img/company-foto3-5.png" alt="">
                             </a>
                     </div>
                 </div>

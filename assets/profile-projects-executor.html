@@ -54,57 +54,339 @@
             <div class="projects-nav">
                 <div class="nav flex-wrap">
                     <ul>
-                        <li><a href="javascript:void(0)">Я заказчик</a></li>
-                        <li class="active"><a href="javascript:void(0)">Я исполнитель</a></li>
-                        <li><a href="javascript:void(0)">Избранное</a></li>
+                        <li class="filter-items filter-items active" data-tab="customer"><a href="javascript:void(0)">Я заказчик</a></li>
+                        <li class="filter-items filter-items" data-tab="executor"><a href="javascript:void(0)">Я исполнитель</a></li>
+                        <li class="filter-items filter-items" data-tab="favorites"><a href="javascript:void(0)">Избранное</a></li>
                     </ul>
                     <div class="btns-blk desktop">
                         <a class="work-profile" href="javascript:void(0)">Рабочий профиль</a>
                         <a class="create-project" href="javascript:void(0)">Создать проект</a>
                     </div>
                 </div>
-                <form class="clearfix">
-                    <div class="search">
-                        <input type="text" placeholder="Название проекта">
-                        <button><i class="icon-icon25"></i></button>
-                    </div>
-                </form>
-                <div class="btns-blk mobile">
-                    <a class="work-profile" href="javascript:void(0)">Рабочий профиль</a>
-                    <a class="create-project" href="javascript:void(0)">Создать проект</a>
-                </div>
-                <div class="checkbox-items">
-                    <ul>
-                        <li>
-                            <input id="q" type="checkbox" checked>
-                            <label for="q">Активные заявки</label>
-                        </li>
-                        <li>
-                            <input id="w" type="checkbox">
-                            <label for="w">Проекты в работе</label>
-                        </li>
-                        <li>
-                            <input id="e" type="checkbox">
-                            <label for="e">Завершенные проекты</label>
-                        </li>
-                        <li>
-                            <input id="r" type="checkbox">
-                            <label for="r">Отказ</label>
-                        </li>
-                        <li>
-                            <input id="t" type="checkbox">
-                            <label for="t">Спам</label>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="projects-content">
+            <div class="projects-content active tab-item customer">
+                <div class="projects-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название проекта">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                    <div class="btns-blk mobile">
+                        <a class="work-profile" href="javascript:void(0)">Рабочий профиль</a>
+                        <a class="create-project" href="javascript:void(0)">Создать проект</a>
+                    </div>
+                    <div class="checkbox-items">
+                        <ul>
+                            <li>
+                                <input id="q" type="checkbox" checked>
+                                <label for="q">Активные заявки</label>
+                            </li>
+                            <li>
+                                <input id="w" type="checkbox">
+                                <label for="w">Проекты в работе</label>
+                            </li>
+                            <li>
+                                <input id="e" type="checkbox">
+                                <label for="e">Завершенные проекты</label>
+                            </li>
+                            <li>
+                                <input id="r" type="checkbox">
+                                <label for="r">Отказ</label>
+                            </li>
+                            <li>
+                                <input id="t" type="checkbox">
+                                <label for="t">Спам</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="projects-items">
                     <div class="projects-item clearfix">
                         <div class="text">
                             <div class="avatar">
                                 <img src="../img/projects-item-img.png" alt="">
                                 <h3>Иван Иванов</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="include">
+                                <i class="icon-icon30"></i>
+                                Подключить опции
+                            </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                <a href="javascript:void(0)" class="include">
+                                    <i class="icon-icon30"></i>
+                                    Подключить опции
+                                </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                <a href="javascript:void(0)" class="include">
+                                    <i class="icon-icon30"></i>
+                                    Подключить опции
+                                </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                <a href="javascript:void(0)" class="include">
+                                    <i class="icon-icon30"></i>
+                                    Подключить опции
+                                </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content active tab-item executor">
+                <div class="projects-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название проекта">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                    <div class="btns-blk mobile">
+                        <a class="work-profile" href="javascript:void(0)">Рабочий профиль</a>
+                        <a class="create-project" href="javascript:void(0)">Создать проект</a>
+                    </div>
+                    <div class="checkbox-items">
+                        <ul>
+                            <li>
+                                <input id="q" type="checkbox" checked>
+                                <label for="q">Активные заявки</label>
+                            </li>
+                            <li>
+                                <input id="w" type="checkbox">
+                                <label for="w">Проекты в работе</label>
+                            </li>
+                            <li>
+                                <input id="e" type="checkbox">
+                                <label for="e">Завершенные проекты</label>
+                            </li>
+                            <li>
+                                <input id="r" type="checkbox">
+                                <label for="r">Отказ</label>
+                            </li>
+                            <li>
+                                <input id="t" type="checkbox">
+                                <label for="t">Спам</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="projects-items">
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов22</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="include">
+                                <i class="icon-icon30"></i>
+                                Подключить опции
+                            </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                <a href="javascript:void(0)" class="include">
+                                    <i class="icon-icon30"></i>
+                                    Подключить опции
+                                </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                <a href="javascript:void(0)" class="include">
+                                    <i class="icon-icon30"></i>
+                                    Подключить опции
+                                </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов</h3>
+                                <span>Новосибирск</span>
+                            </div>
+                            <h4>Необходимо снять на видео 8 мероприятий</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, 
+                                фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку 
+                                та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, 
+                                але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                <a href="javascript:void(0)" class="include">
+                                    <i class="icon-icon30"></i>
+                                    Подключить опции
+                                </a>
+                        </div>
+                        <div class="sum clearfix">
+                            <span>3000 RUB</span>
+                            <ul>
+                                <li>24 заявки</li>
+                                <li>Открыт 17 дней</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content active tab-item favorites">
+                <div class="projects-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название проекта">
+                            <button><i class="icon-icon25"></i></button>
+                        </div>
+                    </form>
+                    <div class="btns-blk mobile">
+                        <a class="work-profile" href="javascript:void(0)">Рабочий профиль</a>
+                        <a class="create-project" href="javascript:void(0)">Создать проект</a>
+                    </div>
+                    <div class="checkbox-items">
+                        <ul>
+                            <li>
+                                <input id="q" type="checkbox" checked>
+                                <label for="q">Активные заявки</label>
+                            </li>
+                            <li>
+                                <input id="w" type="checkbox">
+                                <label for="w">Проекты в работе</label>
+                            </li>
+                            <li>
+                                <input id="e" type="checkbox">
+                                <label for="e">Завершенные проекты</label>
+                            </li>
+                            <li>
+                                <input id="r" type="checkbox">
+                                <label for="r">Отказ</label>
+                            </li>
+                            <li>
+                                <input id="t" type="checkbox">
+                                <label for="t">Спам</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="projects-items">
+                    <div class="projects-item clearfix">
+                        <div class="text">
+                            <div class="avatar">
+                                <img src="../img/projects-item-img.png" alt="">
+                                <h3>Иван Иванов33</h3>
                                 <span>Новосибирск</span>
                             </div>
                             <h4>Необходимо снять на видео 8 мероприятий</h4>

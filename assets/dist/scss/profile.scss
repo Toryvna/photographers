@@ -532,7 +532,11 @@ div#video2 {
                             margin-left: auto;
                             margin-top: 15px;
                             margin-right: 0;
-
+                            position: inherit;
+                            width: auto;
+                            left: inherit;
+                            right: inherit;
+                            height: auto;
                             i {
                                 color: #222222;
                                 font-size: 17px;
@@ -1082,7 +1086,6 @@ div#video2 {
 
     .profile-friends {
         .projects-nav {
-            margin-bottom: 25px;
 
             .nav {
                 position: relative;
@@ -1144,6 +1147,9 @@ div#video2 {
                     }
                 }
             }
+        }
+        .profile-search{
+            margin-bottom: 25px;
 
             form {
                 margin-bottom: 17px;
@@ -1341,10 +1347,14 @@ div#video2 {
                 }
             }
         }
-
+        .friends-content{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
         .friends-item {
             position: relative;
-
             .option {
                 right: 0;
                 top: -8px;
@@ -3554,9 +3564,14 @@ div#video2 {
                         }
                     }
                 }
-
+                .reviews-answer{
+                    .reviews-item{
+                        border: none;
+                    }
+                }
                 .reviews-text {
                     padding: 19px 0;
+                    position: relative;
 
                     p {
                         color: #575757;
@@ -3579,6 +3594,70 @@ div#video2 {
 
                         &:hover {
                             color: #54559c;
+                        }
+                    }
+                }
+                .write {
+                    display: none;
+                    align-items: center;
+                    margin-top: 4px;
+                    margin-bottom: 40px;
+                    &.active{
+                        display: flex;
+                    }
+    
+                    .avatar {
+                        width: 28px;
+                        height: 28px;
+                        margin-right: 9px;
+    
+                        img {
+                            max-width: 100%;
+                            border-radius: 50%;
+                            width: auto;
+                            float: none;
+                            height: auto;
+                            margin: 0;
+                        }
+                    }
+    
+                    form {
+                        width: 100%;
+                    }
+    
+                    button {
+                        width: 104px;
+                    }
+                }
+                .writeMessage {
+                    &-text {
+                        position: relative;
+                        margin-top: 11px;
+                        padding-bottom: 13px;
+    
+                        textarea {
+                            color: #222222;
+                            font-size: 14px;
+                            border: none;
+                            background-color: #f7f7f7;
+                            height: 34px;
+                            min-height: 34px;
+                            overflow: hidden;
+                            resize: none;
+                            width: 100%;
+                            max-width: 747px;
+                            padding: 7px 40px 5px 7px;
+                        }
+    
+                        button {
+                            width: 104px;
+                            height: 34px;
+                            background-color: #54559c;
+                            border: none;
+                            position: absolute;
+                            top: auto;
+                            right: 0;
+                            color: #fff;
                         }
                     }
                 }
@@ -7613,6 +7692,8 @@ div#video2 {
                         }
                     }
                 }
+            }
+            .profile-search{
 
                 form {
                     position: relative;
@@ -7956,7 +8037,22 @@ div#video2 {
             .messages-content {
                 .messages-item {
                     padding: 23px 65px 23px 15px;
-
+                    &.delete{
+                        background-color: #d9dfea;
+                        .avatar-text{
+                            span{
+                                display: none;
+                            }
+                        }
+                        p{
+                            color: #022222;
+                        }
+                        .del,
+                        .share,
+                        .info{
+                            display: none;
+                        }
+                    }
                     &::after {
                         width: 100%;
                     }
@@ -8071,11 +8167,29 @@ div#video2 {
                         top: initial;
                         bottom: 18px;
                     }
-
-                    .reviews-text {
-                        padding: 19px 0;
+                    .reviews-right{
                         margin-left: 75px;
                         margin-top: -10px;
+                    }
+                    .reviews-text {
+                        padding: 19px 0;
+                    }
+                    .writeMessage-text {    
+                        padding-bottom: 0;
+                        margin-top: 0;
+                        .write {
+                            margin-top: 22px;
+                        }
+        
+                        textarea {
+                            padding: 7px 149px 5px 7px;
+                            max-width: none;
+                        }
+        
+                        button {
+                            top: 0;
+                            width: 140px;
+                        }
                     }
                 }
             }
@@ -9084,6 +9198,8 @@ div#video2 {
                         }
                     }
                 }
+            }
+            .profile-search{
 
                 form {
                     .search {
@@ -9447,11 +9563,13 @@ div#video2 {
                             }
                         }
                     }
+                    .reviews-right{
+                        margin-left: 75px;
+                        margin-top: -25px;
+                    }
 
                     .reviews-text {
                         padding: 0 0 24px;
-                        margin-left: 75px;
-                        margin-top: -25px;
 
                         p {
                             line-height: 24px;

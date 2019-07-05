@@ -66,6 +66,10 @@ grunt.initConfig({
 				'../markup/js/viewPhoto.min.js': ['dist/js/viewPhoto.js'],
 				'../markup/js/viewVideo.min.js': ['dist/js/viewVideo.js'],
 
+				'../markup/js/profile-reviews.min.js': ['dist/js/profile-reviews.js'],
+
+				
+
 				
 
 				
