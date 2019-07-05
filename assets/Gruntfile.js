@@ -67,6 +67,7 @@ grunt.initConfig({
 				'../markup/js/viewVideo.min.js': ['dist/js/viewVideo.js'],
 
 				'../markup/js/profile-reviews.min.js': ['dist/js/profile-reviews.js'],
+				'../markup/js/post-changes.min.js': ['dist/js/post-changes.js'],
 
 				
 
@@ -145,6 +146,8 @@ grunt.initConfig({
 						popup_to_delete_messages:'<%= fixturesPath %>/templates/popup-to-delete-messages.html',
 						popup_to_delete_single_message:'<%= fixturesPath %>/templates/popup-to-delete-single-message.html',
 						creation_chat:'<%= fixturesPath %>/templates/creation-chat.html',
+						publication:'<%= fixturesPath %>/templates/publication.html',
+						
 					}
                 },
             }

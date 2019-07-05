@@ -1177,9 +1177,10 @@
                 </div>
             </div>
             <div class="profile__tab-item tab-item4 clearfix">
-                <div class="publication">
-                    <div class="publication_heading">
-                        <div class="publication_heading-author">
+
+                <div class="postItem">
+                    <div class="postItem_heading">
+                        <div class="postItem_heading-author">
                             <div class="author-avatar">
                                 <a href="javascript:void(0)">
                                     <img src="../img/search_page/publication-avatar.png" alt="avatar">
@@ -1190,25 +1191,54 @@
                                 <p class="date">28 октября </p>
                             </div>
                         </div>
-                        <div class="publication_heading-btn">
+                        <form class="editing">
+                            <div class="input-file">
+                                <input type="file" name="file" id="file" class="inputfile" accept="video/*">
+                                <label for="file"><i class="icon-icon19"></i></label>
+                            </div>
+                            <div class="input-file">
+                                <input type="file" name="file" id="file" class="inputfile" accept="image/*">
+                                <label for="file"><i class="icon-icon26"></i></label>
+                            </div>
+                        </form>
+                        <div class="postItem_heading-options">
                             <a href="javascript:void(0)" class="arrowBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Удалить запись</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Открепить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="edit">Редактировать</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Выключить комментарии</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="publication_content">
-                        <div class="publication_content-text">
-                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                    <div class="postItem_content">
+                        <div class="postItem_content-text">
+                            <p class="text-edit">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                вэб-дизайне.
                                 Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                                 В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
                                 используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
-                                без заметных изменений пять веков, но и перешагнул в электронный дизайн. </p>
+                                без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+                            <img class="pencil-edit" src="../img/pencil-edit-button.svg"></i>
                         </div>
-                        <div class="publication_content-gallery single">
+                        <div class="postItem_content-gallery single">
                             <figure class="gallery__image">
-                                <a data-fancybox="allResult-publication2" href="../img/publicationImg.jpg"></a>
-                                <img src="../img/publicationImg.jpg" alt="image">
+                                <span class="close">&#10006;</span>
+                                <a data-fancybox="allResult-publication2" href="../img/profilePost-img1.jpg"></a>
+                                <img src="../img/profilePost-img1.jpg" alt="image">
                             </figure>
                         </div>
-                        <div class="publication_content-actions">
+                        <div class="postItem_content-actions">
                             <div class="left-group">
                                 <a href="javascript:void(0)" class="likeBtn">
                                     <span>17</span>
@@ -1221,11 +1251,64 @@
                                 <a href="javascript:void(0)" class="shareBtn"></a>
                             </div>
                         </div>
+                        <div class="write comment">
+                            <div class="avatar">
+                                <img src="../img/year-item-img4.png" alt="avatar">
+                            </div>
+                            <form>
+                                <div class="writeMessage-text">
+                                    <textarea class="checkTextarea" type="text" placeholder="Напишите комментарий"></textarea>
+                                    <button class="writeComment">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="messages-item">
+                            <div class="item-content">
+                                <div class="avatar clearfix">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/messages-item1.png" alt="">
+                                    </a>
+                                    <div class="avatar-text mobile">
+                                        <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                        <span>18 декабря в 18:09 </span>
+                                    </div>
+                                </div>
+                                <div class="messages-text">
+                                    <div class="avatar-text desctop">
+                                        <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                        <span>18 декабря в 18:09 </span>
+                                    </div>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum
+                                        є, фактично,
+                                        стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку та
+                                        склав на ній
+                                        підбірку зразків шрифтів. "Риба" не тільки успішно пережила пять століть, але й
+                                        прижилася
+                                        в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                    <a href="javascript:void(0)" class="addcomment">Ответить</a>
+                                </div>
+                            </div>
+                            <div class="write comment2">
+                                <div class="avatar">
+                                    <img src="../img/year-item-img4.png" alt="avatar">
+                                </div>
+                                <form>
+                                    <div class="writeMessage-text">
+                                        <textarea class="checkTextarea" type="text" placeholder="Напишите комментарий"></textarea>
+                                        <button>Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="publication">
-                    <div class="publication_heading">
-                        <div class="publication_heading-author">
+
+                <div class="postItem">
+                    <div class="postItem_heading">
+                        <div class="postItem_heading-author">
                             <div class="author-avatar">
                                 <a href="javascript:void(0)">
                                     <img src="../img/search_page/publication-avatar.png" alt="avatar">
@@ -1236,37 +1319,54 @@
                                 <p class="date">28 октября </p>
                             </div>
                         </div>
-                        <div class="publication_heading-btn">
+                        <form class="editing">
+                            <div class="input-file">
+                                <input type="file" name="file" id="file" class="inputfile" accept="video/*">
+                                <label for="file"><i class="icon-icon19"></i></label>
+                            </div>
+                            <div class="input-file">
+                                <input type="file" name="file" id="file" class="inputfile" accept="image/*">
+                                <label for="file"><i class="icon-icon26"></i></label>
+                            </div>
+                        </form>
+                        <div class="postItem_heading-options">
                             <a href="javascript:void(0)" class="arrowBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Удалить запись</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Открепить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="edit">Редактировать</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Выключить комментарии</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="publication_content">
-                        <div class="publication_content-text">
-                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                    <div class="postItem_content">
+                        <div class="postItem_content-text">
+                            <p class="text-edit">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                вэб-дизайне.
                                 Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                                 В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
                                 используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
-                                без заметных изменений пять веков, но и перешагнул в электронный дизайн. </p>
+                                без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+                            <img class="pencil-edit" src="../img/pencil-edit-button.svg"></i>
                         </div>
-                        <div class="publication_content-gallery">
-                            <figure class="gallery__image gallery__item--1">
-                                <a data-fancybox="allResult-publication" href="../img/search_page/publish-img1.jpg"></a>
-                                <img src="../img/search_page/publish-img1.jpg" alt="image">
-                            </figure>
-                            <figure class="gallery__image gallery__item--2">
-                                <a data-fancybox="allResult-publication" href="../img/search_page/publish-img2.jpg"></a>
-                                <img src="../img/search_page/publish-img2.jpg" alt="image">
-                            </figure>
-                            <figure class="gallery__image gallery__item--3">
-                                <a data-fancybox="allResult-publication" href="../img/search_page/publish-img3.jpg"></a>
-                                <img src="../img/search_page/publish-img3.jpg" alt="image">
-                            </figure>
-                            <figure class="gallery__image gallery__item--4">
-                                <a data-fancybox="allResult-publication" href="../img/search_page/publish-img4.jpg"></a>
-                                <img src="../img/search_page/publish-img4.jpg" alt="image">
+                        <div class="postItem_content-gallery single">
+                            <figure class="gallery__image">
+                                <span class="close">&#10006;</span>
+                                <a data-fancybox="allResult-publication2" href="../img/profilePost-img1.jpg"></a>
+                                <img src="../img/profilePost-img1.jpg" alt="image">
                             </figure>
                         </div>
-                        <div class="publication_content-actions">
+                        <div class="postItem_content-actions">
                             <div class="left-group">
                                 <a href="javascript:void(0)" class="likeBtn">
                                     <span>17</span>
@@ -1279,6 +1379,58 @@
                                 <a href="javascript:void(0)" class="shareBtn"></a>
                             </div>
                         </div>
+                        <div class="write comment">
+                            <div class="avatar">
+                                <img src="../img/year-item-img4.png" alt="avatar">
+                            </div>
+                            <form>
+                                <div class="writeMessage-text">
+                                    <textarea class="checkTextarea" type="text" placeholder="Напишите комментарий"></textarea>
+                                    <button class="writeComment">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="messages-item">
+                            <div class="item-content">
+                                <div class="avatar clearfix">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/messages-item1.png" alt="">
+                                    </a>
+                                    <div class="avatar-text mobile">
+                                        <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                        <span>18 декабря в 18:09 </span>
+                                    </div>
+                                </div>
+                                <div class="messages-text">
+                                    <div class="avatar-text desctop">
+                                        <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                        <span>18 декабря в 18:09 </span>
+                                    </div>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum
+                                        є, фактично,
+                                        стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку та
+                                        склав на ній
+                                        підбірку зразків шрифтів. "Риба" не тільки успішно пережила пять століть, але й
+                                        прижилася
+                                        в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                    <a href="javascript:void(0)" class="addcomment">Ответить</a>
+                                </div>
+                            </div>
+                            <div class="write comment2">
+                                <div class="avatar">
+                                    <img src="../img/year-item-img4.png" alt="avatar">
+                                </div>
+                                <form>
+                                    <div class="writeMessage-text">
+                                        <textarea class="checkTextarea" type="text" placeholder="Напишите комментарий"></textarea>
+                                        <button>Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -1328,6 +1480,7 @@
 
     <script src="../js/script.min.js"></script>
     <script src="../js/profile-unregistered.min.js"></script>
+    <script src="../js/post-changes.min.js"></script>
 
 </body>
 
