@@ -1,8 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     //показать поле поиска в сообщениях
-    $(document).mouseup(function(e){
-        $('.show-search').on('click', function(){
+    $(document).mouseup(function (e) {
+        $('.show-search').on('click', function () {
             $(this).parent().addClass('show');
             $(this).parent().find('.search input').focus();
         });
@@ -13,8 +13,8 @@ $(document).ready(function(){
     });
 
     //показать параметры 
-    $(document).mouseup(function(e){
-        $('.options .openBtn').on('click', function(){
+    $(document).mouseup(function (e) {
+        $('.options .openBtn').on('click', function () {
             $(this).parent().toggleClass('show');
         });
         var item = $('.options.show');
@@ -23,60 +23,84 @@ $(document).ready(function(){
         }
     });
 
-    $('.options a').on('click', function(){
-         $('.options').removeClass('show');
+    $('.options a').on('click', function () {
+        $('.options').removeClass('show');
     });
 
     // Резиновый textarea
-    $('.checkTextarea').keyup(function(){
+    $('.checkTextarea').keyup(function () {
         $(this).css('height', '1px');
         $(this).css('height', '' + $(this).prop('scrollHeight') + "px");
     });
 
     //попап удаления диалога
-    $('.open-deleteDialogue').on("click",function(){
+    $('.open-deleteDialogue').on("click", function () {
         $('.overlay-deleteDialogue').addClass('active');
     });
-    $('.overlay-deleteDialogue .closeBtn, .overlay-deleteDialogue .close').on("click",function(){
+    $('.overlay-deleteDialogue .closeBtn, .overlay-deleteDialogue .close').on("click", function () {
         $('.overlay-deleteDialogue').removeClass('active');
-    }); 
+    });
 
-    $('.open-successfulDel').on("click",function(){
+    $('.open-successfulDel').on("click", function () {
         $('.overlay-successfulDel').addClass('active');
     });
-    $('.overlay-successfulDel .closeBtn, .overlay-successfulDel .close').on("click",function(){
+    $('.overlay-successfulDel .closeBtn, .overlay-successfulDel .close').on("click", function () {
         $('.overlay-successfulDel').removeClass('active');
-    }); 
-    
+    });
+
     //попап удаления сообщения
-    $('.open-deleteMsg').on("click",function(){
+    $('.open-deleteMsg').on("click", function () {
         $('.overlay-deleteMsg').addClass('active');
     });
-    $('.overlay-deleteMsg .closeBtn, .overlay-deleteMsg .close').on("click",function(){
+    $('.overlay-deleteMsg .closeBtn, .overlay-deleteMsg .close').on("click", function () {
         $('.overlay-deleteMsg').removeClass('active');
-    }); 
+    });
 
     //создание беседы
-    $('.creationChat_popup .closeBtn').on('click', function(){
+    $('.creationChat_popup .closeBtn').on('click', function () {
         $(this).parent().removeClass('open');
     });
 
     $('.creationChat').on('click', function (ev) {
         $(".creationChat_popup").toggleClass('open');
         console.log('click');
-        if (screen.width > 1024 ) {
-            var x = ev.clientX ;
-            var y = ev.clientY ;
+        if (screen.width > 1024) {
+            var x = ev.clientX;
+            var y = ev.clientY;
             $(".creationChat_popup").css({
-                "top":y + 20,
+                "top": y + 20,
                 // "right": 'inherit',
                 "left": x - 396,
             });
-        }else{
-            var y = ev.clientY ;
+        } else {
+            var y = ev.clientY;
             $(".creationChat_popup").css({
-                "top":y + 20,
+                "top": y + 20,
             });
         }
+    });
+
+    //Выбавть файлы
+    $('.icon-paperclip').on("click", function () {
+        $('.droprown-list').toggleClass('active');
+    });
+
+    //Tabs
+    $('.filter-item').on('click', function () {
+        var dataTab = $(this).data('tab');
+        $('.filter-item').removeClass('active');
+        $('.tab-items').removeClass('active');
+        $(this).addClass('active');
+        $('.' + dataTab).addClass('active');
+    });
+
+    //попап показать вложения
+    $('.attachments-on').on('click', function () {
+        $('.profile-attachments').addClass('active');
+        $('.body').addClass('showing-modal');
+    });
+    $('.closeBtn, .close').on('click', function () {
+        $('.profile-attachments').removeClass('active');
+        $('.body').removeClass('showing-modal');
     });
 });

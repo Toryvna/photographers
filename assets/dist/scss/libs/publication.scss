@@ -15,6 +15,34 @@
         }
     }
 
+    .repost {
+        padding: 13px 16px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 97%;
+            width: 2px;
+            background-color: #a9b3c7;
+            left: 0;
+            top: 0;
+        }
+
+        .item-repost {
+            display: block;
+        }
+
+        .postItem_heading-author .author-avatar {
+            width: 50px;
+            margin-right: 14px;
+        }
+
+        .postItem_content-text {
+            margin-top: 15px;
+        }
+    }
+
     .write {
         display: flex;
         display: none;
@@ -119,6 +147,18 @@
             }
         }
 
+    }
+
+    .messages-item.item-repost {
+        display: block;
+
+        .mobile {
+            display: flex;
+        }
+
+        .desctop {
+            display: none;
+        }
     }
 
     .writeMessage {
@@ -452,6 +492,7 @@
                 display: flex;
                 align-items: center;
             }
+
             .color {
                 &::before {
                     color: #54559c;
@@ -526,14 +567,60 @@
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .postItem {
         margin: 0 0 27px 0;
+
         .writeMessage-text {
             display: flex;
-            
-            button{
+
+            button {
                 position: inherit;
+            }
+        }
+    }
+
+    .postItem .messages-item.item-repost {
+        display: block;
+        margin-top: 22px;
+
+        .item-content .avatar-text.mobile {
+            display: none;
+        }
+
+        .item-content {
+            flex-wrap: nowrap;
+
+            .avatar {
+                margin-right: 10px;
+                width: auto;
+
+                a {
+                    display: inline-flex;
+                    border-radius: 50%;
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+
+            .avatar-text.desctop {
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    color: #222222;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-right: 23px;
+                    margin-bottom: 9px;
+                }
+
+                span {
+                    color: #a7a7a7;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
             }
         }
     }

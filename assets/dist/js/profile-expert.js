@@ -24,10 +24,31 @@ $(document).ready(function () {
     });
 
     //open "adding photo"
-    $('.profile__addingPost textarea').focus(function(){
+    $('.profile__addingPost textarea').focus(function () {
         $('.profile__adding-photos').addClass('open');
     });
-    
-    
+
+    //Выбрать файлы
+    $('.icon-paperclip').on("click", function () {
+        $('.droprown-list').toggleClass('active');
+    });
+
+    //Попап поделиться 
+    $('.shareBtn').on("click", function () {
+        $('.overlayPopup').addClass('active');
+    });
+    $('.share_popup .closeBtn, .overlayPopup .close').on("click", function () {
+        $('.overlayPopup').removeClass('active');
+    });
+
+    $('.button-send').on("click", function () {
+        $('.overlayPopupThanks').addClass('active');
+        $('.overlayPopup').removeClass('active');
+    });
+    $('.popup-thanks .closeBtn, .overlayPopupThanks .close').on("click", function () {
+        $('.overlayPopupThanks').removeClass('active');
+    });
+
+
 
 });

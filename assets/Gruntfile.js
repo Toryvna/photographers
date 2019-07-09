@@ -90,7 +90,7 @@ grunt.initConfig({
 		},
 		dist: {
 			options: {
-				// sourcemap: 'none',
+				sourcemap: 'none',
 				style: 'compressed'
 			},
 			files: [{
@@ -149,6 +149,8 @@ grunt.initConfig({
 						popup_to_delete_single_message:'<%= fixturesPath %>/templates/popup-to-delete-single-message.html',
 						creation_chat:'<%= fixturesPath %>/templates/creation-chat.html',
 						publication:'<%= fixturesPath %>/templates/publication.html',
+						attachments_popup:'<%= fixturesPath %>/templates/popup-attachments.html',
+						popup_share:'<%= fixturesPath %>/templates/popup-share.html',
 						
 					}
                 },

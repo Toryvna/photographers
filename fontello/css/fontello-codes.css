@@ -42,9 +42,17 @@
 .icon-add-people:before { content: '\e828'; } /* '' */
 .icon-lock:before { content: '\e82a'; } /* '' */
 .icon-pro:before { content: '\e82c'; } /* '' */
+.icon-loading:before { content: '\e82d'; } /* '' */
 .icon-search:before { content: '\e82e'; } /* '' */
 .icon-settings:before { content: '\e82f'; } /* '' */
 .icon-top:before { content: '\e830'; } /* '' */
 .icon-world:before { content: '\e831'; } /* '' */
 .icon-write-icon:before { content: '\e832'; } /* '' */
 .icon-card:before { content: '\e833'; } /* '' */
+.icon-file:before { content: '\e840'; } /* '' */
+.icon-link:before { content: '\e841'; } /* '' */
+.icon-paperclip:before { content: '\e845'; } /* '' */
+.icon-pencil-edit-button:before { content: '\e846'; } /* '' */
+.icon-add-people-1:before { content: '\e847'; } /* '' */
+.icon-camera:before { content: '\e848'; } /* '' */
+.icon-check:before { content: '\e849'; } /* '' */
