@@ -90,7 +90,7 @@ grunt.initConfig({
 		},
 		dist: {
 			options: {
-				// sourcemap: 'none',
+				sourcemap: 'none',
 				style: 'compressed'
 			},
 			files: [{

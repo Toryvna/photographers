@@ -100,11 +100,6 @@ $(document).ready(function () {
         }
     });
 
-    //Выбавть файлы
-    $('.icon-paperclip').on("click", function () {
-        $('.droprown-list').toggleClass('active');
-    });
-
     //Попап поделиться 
     $('.shareBtn').on("click", function () {
         $('.overlayPopup').addClass('active');

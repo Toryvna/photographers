@@ -2262,6 +2262,7 @@ div#video2 {
     }
 
     .profile-messages {
+       
         .projects-nav {
             .nav {
                 position: relative;
@@ -3041,9 +3042,10 @@ div#video2 {
                 font-family: "fontello";
                 font-style: normal;
                 font-weight: normal;
+                cursor: pointer;
             }
 
-            .droprown-list {
+            .dropdown-list {
                 display: none;
                 width: 141px;
                 height: 161px;
@@ -3123,6 +3125,9 @@ div#video2 {
 
         .pagination {
             margin-top: 30px;
+        }
+        .active{
+            display: block;
         }
     }
 

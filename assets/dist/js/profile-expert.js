@@ -28,14 +28,49 @@ $(document).ready(function () {
         $('.profile__adding-photos').addClass('open');
     });
 
-    //Выбрать файлы
-    $('.icon-paperclip').on("click", function () {
-        $('.droprown-list').toggleClass('active');
-    });
 
     //Попап поделиться 
     $('.shareBtn').on("click", function () {
         $('.overlayPopup').addClass('active');
+        $(document).mouseup(function (e) {
+            $('.write-file').on('click', function () {
+                $(this).find('.dropdown-list').toggleClass('active');
+            });
+            var item = $('.dropdown-list.active');
+            if (!item.is(e.target) && item.has(e.target).length === 0) {
+                item.removeClass('active');
+            }
+        });
+
+        //Выбор отправителя
+        $('.recipient').on("click", function () {
+            $(this).find('.content').toggleClass('active');
+            $(".recipient").find('.checkbox-item').click(function (event) {
+                event.stopPropagation();
+            });
+        })
+
+        //Добавление кнопки с именем пользователя
+        $('.add-name').on("click", function () {
+            $('.name').addClass('active');
+            $('.remove').on("click", function () {
+                $('.name').removeClass('active');
+            })
+        })
+
+        //если выбран другой чек отключить поле выбора пользователя
+        $(function () {
+            $('#message').on('change', function () {
+                if ($('#message').prop('checked')) {
+                    $('#dropdown').css('display', 'block');
+                } else {
+                    $('#dropdown').css('display', 'none');
+                    $('.content').removeClass('active');
+                }
+            });
+        });
+
+
     });
     $('.share_popup .closeBtn, .overlayPopup .close').on("click", function () {
         $('.overlayPopup').removeClass('active');
@@ -49,6 +84,7 @@ $(document).ready(function () {
         $('.overlayPopupThanks').removeClass('active');
     });
 
+    //Конец
 
 
 });

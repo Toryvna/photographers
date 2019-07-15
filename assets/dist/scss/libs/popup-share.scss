@@ -79,6 +79,7 @@
             justify-content: center;
             min-width: 119px;
             margin-bottom: 12px;
+            display: none;
 
             span {
                 font-size: 12px;
@@ -87,6 +88,10 @@
                 display: block;
                 padding-right: 23px;
             }
+        }
+
+        .name.active {
+            display: flex;
         }
 
         .remove {
@@ -128,13 +133,21 @@
 
         .recipient {
             width: 100%;
-            height: 28px;
-            border: 1px solid #d9dfeb;
             background-color: #ffffff;
-            padding: 6px 14px 0 7px;
             color: #575757;
             font-size: 12px;
             font-weight: 400;
+
+            .dropdown {
+                width: 100%;
+                height: 28px;
+                border: 1px solid #d9dfeb;
+                background-color: #ffffff;
+                padding: 6px 14px 0 7px;
+                color: #575757;
+                font-size: 12px;
+                font-weight: 400;
+            }
         }
     }
 
@@ -199,8 +212,25 @@
     }
 
     .content {
-        margin: 0 15px;
         background-color: #fff;
+        display: none;
+
+        .content-action {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+
+            a {
+                width: 97px;
+                height: 31px;
+                background-color: #54559c;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+        }
 
         .usersList {
             max-height: 305px;
@@ -290,8 +320,11 @@
         }
     }
 
+    .content.active {
+        display: block;
+    }
+
     .actions {
-        border-top: 1px solid #bcc2cf;
         padding: 19px 13px;
 
         .write {
@@ -300,7 +333,7 @@
 
             i {
                 color: #d0d1d8;
-                ;
+                cursor: pointer;
                 font-size: 16px;
                 font-family: "fontello";
                 font-style: normal;
@@ -311,24 +344,25 @@
                 margin-bottom: 0;
             }
 
-            .droprown-list {
+            .dropdown-list {
                 display: none;
                 width: 141px;
                 height: 161px;
                 position: absolute;
                 bottom: 20px;
                 background-repeat: no-repeat;
+                right: 0;
 
                 ul {
                     padding: 13px 15px 13px 24px;
 
                     li {
-                        padding-bottom: 16px;
+                        padding-bottom: 5px;
                     }
                 }
             }
 
-            .active {
+            .dropdown-list.active {
                 display: block;
             }
 
@@ -415,6 +449,9 @@
             }
         }
     }
+    .active{
+        display: block;
+    }
 }
 
 .popup-thanks {
@@ -438,6 +475,16 @@
 .overlayPopup.active,
 .overlayPopupThanks.active {
     display: block;
+}
+
+.overlayPopupThanks .close {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
 }
 
 @media screen and (min-width: 768px) {

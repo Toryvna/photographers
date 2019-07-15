@@ -80,10 +80,18 @@ $(document).ready(function () {
         }
     });
 
-    //Выбавть файлы
-    $('.icon-paperclip').on("click", function () {
-        $('.droprown-list').toggleClass('active');
+    //Выбрать файлы
+   
+    $(document).mouseup(function (e) {
+        $('.paperclip').on('click', function () {
+            $('.paperclip').find('.dropdown-list').toggleClass('active');
+        });
+        var item = $('.dropdown-list.active');
+        if (!item.is(e.target) && item.has(e.target).length === 0) {
+            item.removeClass('active');
+        }
     });
+    
 
     //Tabs
     $('.filter-item').on('click', function () {

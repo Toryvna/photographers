@@ -23,83 +23,66 @@
                 <div class="remove"></div>
             </div>
             <div class="recipient">
-                <div class='dropdown'>Введите имя получателя </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="usersList mCustomScrollbar">
-                <div class="checkbox-item">
-                    <label for="user1">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user1" type="checkbox" checked>
-                </div>
-                <div class="checkbox-item">
-                    <label for="user2">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user2" type="checkbox">
-                </div>
-                <div class="checkbox-item">
-                    <label for="user3">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user3" type="checkbox">
-                </div>
-                <div class="checkbox-item">
-                    <label for="user4">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user4" type="checkbox">
-                </div>
-                <div class="checkbox-item">
-                    <label for="user5">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user5" type="checkbox">
-                </div>
-                <div class="checkbox-item">
-                    <label for="user6">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user6" type="checkbox" checked>
-                </div>
-                <div class="checkbox-item">
-                    <label for="user7">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user7" type="checkbox">
-                </div>
-                <div class="checkbox-item">
-                    <label for="user8">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user8" type="checkbox">
-                </div>
-                <div class="checkbox-item">
-                    <label for="user9">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user9" type="checkbox">
-                </div>
-                <div class="checkbox-item">
-                    <label for="user10">
-                        <img src="../img/messages-item1.png" alt="">
-                        Иван Иванов
-                    </label>
-                    <input id="user10" type="checkbox">
+                <div class='dropdown' id='dropdown'>Введите имя получателя </div>
+                <div class="content">
+                    <div class="usersList mCustomScrollbar">
+                        <div class="checkbox-item">
+                            <label for="user1">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user1" type="checkbox" checked>
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user1">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user1" type="checkbox" checked>
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user1">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user1" type="checkbox" checked>
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user2">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user2" type="checkbox">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user3">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user3" type="checkbox">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user4">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user4" type="checkbox">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user5">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user5" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="content-action">
+                        <a href="javascript:void(0)" class="add-name">Выбрать</a>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="actions">
             <form>
@@ -113,8 +96,8 @@
                         <label for="file" class="labelfile"><i class="icon-icon26"></i></label>
                     </div>
                     <div class="write-file">
-                        <i class="icon-paperclip"></i>
-                        <div class="droprown-list" style="background-image: url(../img/dropdown.png)">
+                        <i class="icon-paperclip paperclip"></i>
+                        <div class="dropdown-list" style="background-image: url(../img/dropdown.png)">
                             <ul>
                                 <li>
                                     <input type="file" name="file" id="file01" class="inputfile" accept="image/*">
@@ -138,7 +121,7 @@
                 </div>
                 <div class="flex-wrap">
                     <div class="form-button">
-                        <button class="button-send">Отправить</button>
+                        <button class="button-send" type="button">Отправить</button>
                     </div>
                 </div>
             </form>
