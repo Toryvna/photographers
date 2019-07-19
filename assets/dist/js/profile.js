@@ -76,29 +76,6 @@ $(document).ready(function () {
         $(this).find('.icon-icon9').toggleClass('color');
     });
 
-    //создание беседы
-    $('.creationChat_popup .closeBtn').on('click', function () {
-        $(this).parent().removeClass('open');
-    });
-
-    $('.creationChat').on('click', function (ev) {
-        $(".creationChat_popup").toggleClass('open');
-        console.log('click');
-        if (screen.width > 1024) {
-            var x = ev.clientX;
-            var y = ev.clientY;
-            $(".creationChat_popup").css({
-                "top": y + 20,
-                // "right": 'inherit',
-                "left": x - 396,
-            });
-        } else {
-            var y = ev.clientY;
-            $(".creationChat_popup").css({
-                "top": y + 20,
-            });
-        }
-    });
 
     //Попап поделиться 
     $('.shareBtn').on("click", function () {
