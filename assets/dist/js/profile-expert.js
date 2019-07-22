@@ -87,4 +87,14 @@ $(document).ready(function () {
     //Конец
 
 
+    $(document).mouseup(function (e) {
+        $('.paperclip').on('click', function () {
+            $('.dropdown-list').toggleClass('active');
+        });
+        var item = $('.dropdown-list.active');
+        if (!item.is(e.target) && item.has(e.target).length === 0) {
+            item.removeClass('active');
+        }
+    });
+
 });
