@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?23198932');
-  src: url('../font/fontello.eot?23198932#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?23198932') format('woff2'),
-       url('../font/fontello.woff?23198932') format('woff'),
-       url('../font/fontello.ttf?23198932') format('truetype'),
-       url('../font/fontello.svg?23198932#fontello') format('svg');
+  src: url('../font/fontello.eot?68120893');
+  src: url('../font/fontello.eot?68120893#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?68120893') format('woff2'),
+       url('../font/fontello.woff?68120893') format('woff'),
+       url('../font/fontello.ttf?68120893') format('truetype'),
+       url('../font/fontello.svg?68120893#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?23198932#fontello') format('svg');
+    src: url('../font/fontello.svg?68120893#fontello') format('svg');
   }
 }
 */
@@ -96,6 +96,7 @@
 .icon-base:before { content: '\e826'; } /* '' */
 .icon-checked:before { content: '\e827'; } /* '' */
 .icon-add-people:before { content: '\e828'; } /* '' */
+.icon-rocket:before { content: '\e829'; } /* '' */
 .icon-lock:before { content: '\e82a'; } /* '' */
 .icon-pro:before { content: '\e82c'; } /* '' */
 .icon-loading:before { content: '\e82d'; } /* '' */
@@ -105,6 +106,12 @@
 .icon-world:before { content: '\e831'; } /* '' */
 .icon-write-icon:before { content: '\e832'; } /* '' */
 .icon-card:before { content: '\e833'; } /* '' */
+.icon-calendar:before { content: '\e839'; } /* '' */
+.icon-collective:before { content: '\e83a'; } /* '' */
+.icon-growth:before { content: '\e83b'; } /* '' */
+.icon-highlighter:before { content: '\e83c'; } /* '' */
+.icon-invisible:before { content: '\e83e'; } /* '' */
+.icon-pin:before { content: '\e83f'; } /* '' */
 .icon-file:before { content: '\e840'; } /* '' */
 .icon-link:before { content: '\e841'; } /* '' */
 .icon-paperclip:before { content: '\e845'; } /* '' */

@@ -69,6 +69,10 @@ grunt.initConfig({
 				'../markup/js/profile-reviews.min.js': ['dist/js/profile-reviews.js'],
 				'../markup/js/post-changes.min.js': ['dist/js/post-changes.js'],
 				'../markup/js/profile-bookmarks.min.js': ['dist/js/profile-bookmarks.js'],
+
+				'../markup/js/create-project.min.js': ['dist/js/create-project.js'],
+
+				
 				
 
 				
@@ -90,7 +94,7 @@ grunt.initConfig({
 		},
 		dist: {
 			options: {
-				sourcemap: 'none',
+				// sourcemap: 'none',
 				style: 'compressed'
 			},
 			files: [{
