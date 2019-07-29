@@ -12,6 +12,42 @@
 
 <body>
 
+    <!-- попап подтвердить выбор исполнителя -->
+    <div class="overlay-prjPopup overlayPopup">
+        <div class="close"></div>
+        <div class="prjPopup__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <p>Выбрать пользователя <strong>Иван Иванов</strong> исполнителем Вашего проекта “Необходимо снять на видео 8 мероприятий”?</p>
+                <div class="btns-wrap">
+                    <a href="javascript:void(0)" class="accept closeBtn open-prjPopup2">Подтвердить</a>
+                    <a href="javascript:void(0)" class="closeBtn cancel">Отмена</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- конец попап подтвердить выбор исполнителя -->
+
+    <!-- попап выбор исполнителя подтвержден -->
+    <div class="overlay-prjPopup2 overlayPopup">
+        <div class="close"></div>
+        <div class="prjPopup2__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <p>Вы выбрали <strong>Иван Иванов </strong>
+                    исполнителем Вашего проекта. </p>
+                <p>Вы можете оформить проект в сделку <a href="javascript:void(0)">здесь</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- конец попап выбор исполнителя подтвержден -->
+
+
+
+
+
+
+
     <header>
         <div class="header-content">
             <div class="container clearfix">
@@ -73,6 +109,16 @@
     <div class="projectsCard">
         <div class="container">
             <h2 class="projectsCard__heading">Необходимо снять на видео 8 мероприятий</h2>
+
+            <!-- если исполнитель подтвердил участие, то показывать следующий блок (только на мобильном) -->
+            <div class="projectsCard__notification mobile">
+                <p>Пользователь <span>Иван Иванов</span>
+                    подтвердил свое участие в этом
+                    проекте. Вы можете оформить
+                    Ваш проект в сделку <a href="javascript:void(0)">здесь</a></p>
+            </div>
+            <!----->
+
             <div class="projectsCard__content">
                 <div class="projectsCard__content-top">
                     <div class="author">
@@ -110,8 +156,24 @@
                     <p class="price">Оплата: <span>3000 RUB</span></p>
                     <p class="applications">24 заявки</p>
                     <p class="openDays">Открыт 17 дней</p>
+                    <div class="parameters">
+                        <p>Параметры <i class="icon-icon28"></i></p>
+                        <div class="hidden-list">
+                            <a href="project-editing.html">Редактировать </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- если исполнитель подтвердил участие, то показывать следующий блок (только на десктопе) -->
+            <div class="projectsCard__notification desktop">
+                <p>Пользователь <span>Иван Иванов</span>
+                    подтвердил свое участие в этом
+                    проекте. Вы можете оформить
+                    Ваш проект в сделку <a href="javascript:void(0)">здесь</a></p>
+            </div>
+            <!----->
+
             <div class="projectsCard__documents">
                 <div class="projectsCard__documents-top">
                     <p class="label">
@@ -179,7 +241,7 @@
                 </div>
                 <div class="projectsCard__tabs-content">
                     <div class="tab-item tab-item1 active">
-                        <div class="row">
+                        <div class="row highlight">
                             <div class="tab-item_top">
                                 <div class="author">
                                     <div class="author-avatar">
@@ -205,11 +267,21 @@
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                             </div>
+
+                            <!-- 
+                            если выбран исполнитель, все .btn скрываются и отображается кнопка "Исполнитель";
+                            пока исполнитель не подтвердит сделку, видима только кнопка "Ожидание подтверждения от исполнителя"
+                         -->
                             <div class="tab-item_btns">
-                                <a class="btn check" href="javascript:void(0)">Выбрать исполнителя</a>
-                                <a class="btn hide" href="javascript:void(0)">Скрыть заявку</a>
-                                <a class="btn adding" href="javascript:void(0)">Добавить в избранное</a>
+                                <a class="btn open-prjPopup choose" href="javascript:void(0)">Выбрать исполнителя</a>
+                                <a class="btn" href="javascript:void(0)">Cкрытые заявки</a>
+                                <a class="btn" href="javascript:void(0)">Убрать из избранного</a>
+
+                                <a class="btn waiting" href="javascript:void(0)" style="display:none;">Ожидание подтверждения от исполнителя</a>
+                                <a class="btn executor" href="javascript:void(0)" style="display:none;">Исполнитель</a>
                             </div>
+                            <!---->
+
                         </div>
                         <div class="row">
                             <div class="tab-item_top">
@@ -261,11 +333,21 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- 
+                            если выбран исполнитель, все .btn скрываются и отображается кнопка "Исполнитель";
+                            пока исполнитель не подтвердит сделку, видима только кнопка "Ожидание подтверждения от исполнителя"
+                         -->
                             <div class="tab-item_btns">
-                                <a class="btn check" href="javascript:void(0)">Выбрать исполнителя</a>
-                                <a class="btn hide" href="javascript:void(0)">Скрыть заявку</a>
-                                <a class="btn adding" href="javascript:void(0)">Добавить в избранное</a>
+                                <a class="btn open-prjPopup choose" href="javascript:void(0)" style="display:none;">Выбрать исполнителя</a>
+                                <a class="btn" href="javascript:void(0)" style="display:none;">Cкрытые заявки</a>
+                                <a class="btn" href="javascript:void(0)" style="display:none;">Убрать из избранного</a>
+
+                                <a class="btn waiting" href="javascript:void(0)">Ожидание подтверждения от исполнителя</a>
+                                <a class="btn executor" href="javascript:void(0)" style="display:none;">Исполнитель</a>
                             </div>
+                            <!---->
+
                         </div>
                         <div class="row">
                             <div class="tab-item_top">
@@ -293,11 +375,21 @@
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                             </div>
+
+                            <!-- 
+                            если выбран исполнитель, все .btn скрываются и отображается кнопка "Исполнитель";
+                            пока исполнитель не подтвердит сделку, видима только кнопка "Ожидание подтверждения от исполнителя"
+                         -->
                             <div class="tab-item_btns">
-                                <a class="btn check" href="javascript:void(0)">Выбрать исполнителя</a>
-                                <a class="btn hide" href="javascript:void(0)">Скрыть заявку</a>
-                                <a class="btn adding" href="javascript:void(0)">Добавить в избранное</a>
+                                <a class="btn open-prjPopup choose" href="javascript:void(0)" style="display:none;">Выбрать исполнителя</a>
+                                <a class="btn" href="javascript:void(0)" style="display:none;">Cкрытые заявки</a>
+                                <a class="btn" href="javascript:void(0)" style="display:none;">Убрать из избранного</a>
+
+                                <a class="btn waiting" href="javascript:void(0)" style="display:none;">Ожидание подтверждения от исполнителя</a>
+                                <a class="btn executor" href="javascript:void(0)">Исполнитель</a>
                             </div>
+                            <!------>
+
                         </div>
                     </div>
                     <div class="tab-item tab-item2">
@@ -327,11 +419,20 @@
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                             </div>
+
+                            <!-- 
+                            если выбран исполнитель, все .btn скрываются и отображается кнопка "Исполнитель";
+                            пока исполнитель не подтвердит сделку, видима только кнопка "Ожидание подтверждения от исполнителя"
+                         -->
                             <div class="tab-item_btns">
-                                <a class="btn check" href="javascript:void(0)">Выбрать исполнителя</a>
-                                <a class="btn hide" href="javascript:void(0)">Восстановить заявку</a>
-                                <a class="btn adding" href="javascript:void(0)">Добавить в избранное</a>
+                                <a class="btn open-prjPopup choose" href="javascript:void(0)">Выбрать исполнителя</a>
+                                <a class="btn" href="javascript:void(0)">Cкрытые заявки</a>
+                                <a class="btn" href="javascript:void(0)">Убрать из избранного</a>
+
+                                <a class="btn waiting" href="javascript:void(0)" style="display:none;">Ожидание подтверждения от исполнителя</a>
+                                <a class="btn executor" href="javascript:void(0)" style="display:none;">Исполнитель</a>
                             </div>
+                            <!------>
                         </div>
                     </div>
                     <div class="tab-item tab-item3">
@@ -361,11 +462,20 @@
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                             </div>
+
+                            <!-- 
+                            если выбран исполнитель, все .btn скрываются и отображается кнопка "Исполнитель";
+                            пока исполнитель не подтвердит сделку, видима только кнопка "Ожидание подтверждения от исполнителя"
+                         -->
                             <div class="tab-item_btns">
-                                <a class="btn check" href="javascript:void(0)">Выбрать исполнителя</a>
-                                <a class="btn hide" href="javascript:void(0)">Cкрытые заявки</a>
-                                <a class="btn adding" href="javascript:void(0)">Убрать из избранного</a>
+                                <a class="btn open-prjPopup choose" href="javascript:void(0)">Выбрать исполнителя</a>
+                                <a class="btn" href="javascript:void(0)">Cкрытые заявки</a>
+                                <a class="btn" href="javascript:void(0)">Убрать из избранного</a>
+
+                                <a class="btn waiting" href="javascript:void(0)" style="display:none;">Ожидание подтверждения от исполнителя</a>
+                                <a class="btn executor" href="javascript:void(0)" style="display:none;">Исполнитель</a>
                             </div>
+                            <!------>
                         </div>
                     </div>
                 </div>

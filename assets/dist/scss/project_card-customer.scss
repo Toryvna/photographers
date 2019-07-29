@@ -1,5 +1,7 @@
 @import "libs/header";
 @import "libs/slick";
+@import "libs/project-popups";
+
 .projectsCard{
     &__heading{
         font-size: 18px;
@@ -8,7 +10,7 @@
         margin: 5px 0 35px;
     }
     &__content{
-        padding-bottom: 42px;
+        padding-bottom: 25px;
         &-top{
             .author{
                 display: flex;
@@ -123,6 +125,83 @@
                     border-right: 1px solid #d2d2d2;
                 }
             }
+            .parameters{
+                width: 100%;
+                border-top: 1px solid #c9c9c9;
+                padding-top: 15px;
+                position: relative;
+                &:hover{
+                    .hidden-list{
+                        display: block;
+                    }
+                }
+                p{
+                    cursor: pointer;
+                    text-align: right;
+                    position: relative;
+                    margin-bottom: 0;
+                    i{
+                        color: #575757;
+                        font-size: 12px;
+                        margin-left: 5px;
+                        &:before{
+                            -webkit-transform: rotate(90deg);
+                            -moz-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                            -o-transform: rotate(90deg);
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                .hidden-list{
+                    display: none;
+                    position: absolute;
+                    padding: 20px 40px;
+                    background: url('../img/optionBg2.png') no-repeat 100% 0%;
+                    background-size: 100% 100%;
+                    right: 0;
+                    top: 20px;
+                    width: 262px;
+                    a{
+                        color: #222222;
+                        font-size: 15px;
+                        display: inline-block;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            width: 5px;
+                            height: 5px;
+                            background-color: #d4d5dc;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: -20px;
+                            top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__notification{
+        background-color: #c8d1e0;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+        p{
+            color: #022222;
+            font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+            font-size: 16px;
+        }
+        span{
+            color: #54559c;
+            font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+        }
+        a{
+            color: #54559c;
+            font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+            text-decoration: underline;
+        }
+        &.desktop{
+            display: none;
         }
     }
     &__documents{
@@ -244,6 +323,11 @@
             .row{
                 border-bottom: 1px solid #c9c9c9;
                 margin-bottom: 39px;
+                padding: 20px;
+                &.highlight{
+                    background-color: #f7f7f7;
+                }
+
             }
             .tab-item{
                 display: none;
@@ -340,12 +424,10 @@
                     .btn{
                         display: block;
                         margin: 0 auto;
-                        width: 234px;
-                        height: 40px;
                         border: 2px solid #54559c;
                         text-align: center;
                         color: #54559c;
-                        line-height: 37px;
+                        padding: 8px 15px;
                         font-size: 16px;
                         margin-bottom: 17px;
                         -webkit-transition: all .2s ease-in-out;
@@ -356,6 +438,31 @@
                         &:hover{
                             background-color: #54559c;
                             color: #ffffff;
+                        }
+                        &.choose{
+                            background-color: #27283c;
+                            border-color: #27283c;
+                            color: #fff;
+                            &:hover{
+                                background-color: #54559c;
+                                border-color: #54559c;
+                            }
+                        }
+                        &.waiting{
+                            color: #7d7e8a;
+                            border-color: #7d7e8a;
+                            pointer-events: none;
+                            &:hover{
+                                color: #7d7e8a;
+                                background-color: transparent;
+                            }
+                        }
+                        &.executor{
+                            pointer-events: none;
+                            &:hover{
+                                color: #54559c;
+                                background-color: transparent;
+                            }
                         }
                     }
                 }
@@ -393,6 +500,22 @@
                         margin-bottom: 0;
                     }
                 }
+                .parameters{
+                    width: auto;
+                    border: none;
+                    padding-top: 0;
+                    margin-left: auto;
+                }
+            }
+        }
+        &__notification{
+            text-align: center;
+            margin-bottom: 40px;
+            &.mobile{
+                display: none;
+            }
+            &.desktop{
+                display: block;
             }
         }
         &__documents{
@@ -469,10 +592,12 @@
                         display: flex;
                         .btn{
                             margin: 0 16px 0 0;
-                            height: 54px;
-                            line-height: 51px;
+                            padding: 15px;
                         }
                     }
+                }
+                .row{
+                    padding: 40px;
                 }
             }
         }
@@ -486,7 +611,7 @@
             margin-bottom: 70px;
         }
         &__content{
-            padding-bottom: 76px;
+            padding-bottom: 30px;
             &-top {
                 .author{
                     &-avatar{
@@ -528,6 +653,9 @@
                     margin: 40px 0 18px;
                 }
             }
+        }
+        &__notification{
+            margin-bottom: 50px;
         }
         &__documents{
             padding-bottom: 42px;

@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/profile_menu.css">
+    
     <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
@@ -63,17 +64,48 @@
                     <div class="form-textarea">
                         <label>Описание проекта</label>
                         <textarea></textarea>
+                        <div class="actions">
+                            <div class="style-btns">
+                                <a href="javascript:void(0)" class="strong">
+                                    T
+                                </a>
+                                <a href="javascript:void(0)" class="underline">
+                                    T
+                                </a>
+                                <a href="javascript:void(0)" class="italic">
+                                    T
+                                </a>
+                            </div>
+                            <div class="upload-btns">
+                                <div class="files add-image" id="files2">
+                                    <label>
+                                        <i class="icon-icon20"></i>
+                                    </label>
+                                </div>
+                                <div class="files add-video" id="files3">
+                                    <label>
+                                        <i class="icon-icon19"></i>
+                                    </label>
+                                </div>
+                                <div class="files add-files" id="files4">
+                                    <label>
+                                        <i class="icon-paperclip"></i>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+
                     </div>
+
+
                     <div class="attached-doc">
                         <p><i class="icon-icon4"></i> Приклепленные документы</p>
                         <div class="files" id="files">
-                            <ul class="fileList">
-                                <li>
-                                    <label class="add-file">
-                                        <input type="file" name="files" multiple />
-                                    </label>
-                                </li>
-                            </ul>
+                            <div class="file-loading">
+                                <input id="file-1" type="file" name="file-1[]" multiple>
+                                <label class="button">Text</label>
+                            </div>
                         </div>
                     </div>
                     <div class="form-flex">
@@ -109,7 +141,7 @@
                         <div class="form-input date item">
                             <label>Актуально до</label>
                             <i class="icon-calendar"></i>
-                            <input type="date">
+                            <input type="date" id="datepicker">
                         </div>
                     </div>
                     <div class="form-checkbox">
@@ -267,9 +299,12 @@
 <!-- /build -->
 
 <script src="../js/jquery.min.js"></script>
+<script src="../js/fileinput.min.js"></script>
 <script src="../js/jcf.min.js"></script>
 <script src="../js/jcf.checkbox.min.js"></script>
 <script src="../js/jcf.select.min.js"></script>
+
+
 <script src="../js/jquery.matchHeight.min.js"></script>
 <script src="../js/script.min.js"></script>
 <script src="../js/create-project.min.js"></script>

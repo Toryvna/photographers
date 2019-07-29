@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Создание проекта</title>
+    <title>Редактирование проекта</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
@@ -170,7 +170,7 @@
             </div>
             <div class="profile-createProject">
                 <div class="create-heading">
-                    <p>Публикация проекта </p>
+                    <p>Оплата проекта </p>
                 </div>
                 <form>
                     <div class="create-body">
@@ -254,156 +254,25 @@
                                 <label>Город</label>
                                 <input type="text">
                             </div>
-                            <div class="form-input date item">
-                                <label>Актуально до</label>
-                                <i class="icon-calendar"></i>
-                                <input type="date" id="datepicker">
+                            <div class="item">
+                                <p>
+                                    Исполнитель:
+                                    <a href="javascript:void(0)">Иван Иванов</a>
+                                </p>
                             </div>
-                        </div>
-                        <div class="form-checkbox">
-                            <div class="title">
-                                <p>Коллективный проект</p>
-                                <span>(в проекте может принимать участие несколько человек)</span>
+                            <div class="form-select item">
+                                <label>Способ оплаты</label>
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>прямой рассчет</option>
+                                    <option>прямой рассчет</option>
+                                    <option>прямой рассчет</option>
+                                </select>
                             </div>
-                            <div class="input"><input type="checkbox" checked></div>
                         </div>
                     </div>
-                    <div class="create-heading">
-                        <p>Продвижение</p>
-                    </div>
-                    <div class="create-promotion">
-                        <div class="flex-wrap">
-                            <div class="item">
-                                <div class="item-top">
-                                    <div class="icon">
-                                        <i class="icon-pin"></i>
-                                    </div>
-                                    <input type="checkbox">
-                                </div>
-                                <div class="title">
-                                    <p>Закрепить в ТОП</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="select">
-                                    <span>на</span>
-                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                    <span>дней</span>
-                                </div>
-                                <div class="price">
-                                    <p><span>Стоимость: </span>500 руб.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-top">
-                                    <div class="icon">
-                                        <i class="icon-growth"></i>
-                                    </div>
-                                    <input type="checkbox">
-                                </div>
-                                <div class="title">
-                                    <p>Поднять в поиске</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="price">
-                                    <p>500 руб.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-top">
-                                    <div class="icon">
-                                        <i class="icon-highlighter"></i>
-                                    </div>
-                                    <input type="checkbox">
-                                </div>
-                                <div class="title">
-                                    <p>Выделить цветом</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="price">
-                                    <p>от 500 руб.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-top">
-                                    <div class="icon">
-                                        <i class="icon-icon17"></i>
-                                    </div>
-                                    <input type="checkbox">
-                                </div>
-                                <div class="title">
-                                    <p>Турбо продвижение</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="price">
-                                    <p>500 руб.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
-                            <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked>открыть только для специалистов</label>
-                                </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
-                                </div>
-                            </div>
-                            <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked>открыть только для специалистов со статусом “Pro” и “Top”</label>
-                                </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
-                                </div>
-                            </div>
-                            <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked>скрыть от поисковых систем</label>
-                                </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-button">
-                            <p>Всего к оплате: <span>500 руб.</span></p>
-                            <button>Опубликовать</button>
-                        </div>
+                    <div class="form-button">
+                        <button class="close-project">Закрыть проект</button>
+                        <button>Оформить проект в сделку</button>
                     </div>
                 </form>
             </div>

@@ -34,6 +34,9 @@ grunt.initConfig({
 				'../markup/js/jcf.radio.min.js': ['dist/js/plugin/jcf.radio.js'],
 				'../markup/js/jquery.ui.touch-punch.min.js': ['dist/js/plugin/jquery.ui.touch-punch.js'],
 				'../markup/js/jquery.mCustomScrollbar.min.js': ['dist/js/plugin/jquery.mCustomScrollbar.js'],
+				'../markup/js/fileinput.min.js': ['dist/js/plugin/fileinput.js'],
+				
+				
 				
 				
 
@@ -155,6 +158,7 @@ grunt.initConfig({
 						publication:'<%= fixturesPath %>/templates/publication.html',
 						attachments_popup:'<%= fixturesPath %>/templates/popup-attachments.html',
 						popup_share:'<%= fixturesPath %>/templates/popup-share.html',
+						project_popups:'<%= fixturesPath %>/templates/project-popups.html',
 						
 					}
                 },

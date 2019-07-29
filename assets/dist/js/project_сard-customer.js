@@ -56,5 +56,20 @@ $(document).ready(function(){
         $('.' + dataTab).addClass('active');
     });
 
+    //попапы выбора исполнителя
+    $('.open-prjPopup').on("click", function () {
+      $('.overlay-prjPopup').addClass('active');
+    });
+    $('.overlay-prjPopup .closeBtn, .overlay-prjPopup .close').on("click", function () {
+        $('.overlay-prjPopup').removeClass('active');
+    });
+
+    $('.open-prjPopup2').on("click", function () {
+      $('.overlay-prjPopup2').addClass('active');
+    });
+    $('.overlay-prjPopup2 .closeBtn, .overlay-prjPopup2 .close').on("click", function () {
+        $('.overlay-prjPopup2').removeClass('active');
+    });
+
 });
 
