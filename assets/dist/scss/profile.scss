@@ -7115,6 +7115,14 @@ div#video2 {
             .form-input{
                 margin-bottom: 15px;
                 position: relative;
+                &.disable{
+                    input{
+                        color: #989898;
+                    }
+                    label{
+                        color: #989898;
+                    }
+                }
                 &.date{
                     i{
                         position: absolute;
@@ -7395,6 +7403,18 @@ div#video2 {
             .form-select{
                 margin-bottom: 15px;
                 position: relative;
+                &.disable{
+                    label{
+                        color: #989898;
+                    }
+                    .jcf-select-text{
+                        cursor: default;
+                        color: #989898;
+                        &::after{
+                            border-top: 5px solid #989898;
+                        }
+                    }
+                }
                 .jcf-select-text{
                   border: 1px solid #e1e1e1;
                   display: block;

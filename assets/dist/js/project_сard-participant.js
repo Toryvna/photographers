@@ -52,5 +52,24 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 
+    //подтвердить/отклонить участие
+    $('.refuse-btn').on('click', function(){
+      $(this).parent().hide();
+      if($(window).width() >= 768 ){
+        $('.refuse-msg.desktop-blk').show();
+      }else{
+        $('.refuse-msg.mobile-blk').show();
+      }
+      
+    })
+    $('.confirm-btn').on('click', function(){
+      $(this).parent().hide();
+      if($(window).width() >= 768 ){
+        $('.confirm-msg.desktop-blk').show();
+      }else{
+        $('.confirm-msg.mobile-blk').show();
+      }
+    })
+
 });
 

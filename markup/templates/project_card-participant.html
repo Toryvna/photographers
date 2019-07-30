@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/project_сard-participant.css">
+    <link rel="stylesheet" href="../css/project_card.css">
 </head>
 
 <body>
@@ -75,12 +75,23 @@
             <h2 class="projectsCard__heading">Необходимо снять на видео 8 мероприятий</h2>
             <!-- кнопки только на мобильном -->
             <div class="projectsCard__actions mobile">
-                <a href="javascript:void(0)" class="btn">Подтвердить участие</a>
-                <a href="javascript:void(0)" class="btn">Отказаться от исполнения</a>
+                <a href="javascript:void(0)" class="btn refuse-btn">Подтвердить участие</a>
+                <a href="javascript:void(0)" class="btn confirm-btn">Отказаться от исполнения</a>
                 <a href="javascript:void(0)" class="btn">Обсудить условия</a>
                 <a href="javascript:void(0)" class="btn">Написать заказчику</a>
             </div>
             <!---->
+
+            <!-- уведомление на мобильном -->
+            <div class="projectsCard__notification mobile-blk confirm-msg">
+                <p>Вы отклонили участие в данном проекте.</p>
+            </div>
+
+            <div class="projectsCard__notification mobile-blk refuse-msg">
+                <p>Вы подтвердили участие в данном проекте.</p>
+            </div>
+            <!--  -->
+
             <div class="projectsCard__content">
                 <div class="projectsCard__content-top">
                     <div class="author">
@@ -95,6 +106,14 @@
                             <p class="city">Новосибирск</p>
                         </div>
                     </div>
+
+                    <!-- текст обновления зависит от времени, которое прошло после обновления -->
+                    <!-- только на desktop -->
+                    <div class="projectsCard__content-updated desktop">
+                        <p><span>28.02.19, </span>обновлено 29.02.19 в 19:00</p>
+                    </div>
+                    <!--  -->
+
                     <div class="rating">
                         <p>
                             Иван Иванов
@@ -103,6 +122,14 @@
                         <p>Положительных отзывов 100%</p>
                     </div>
                 </div>
+
+                <!-- текст обновления зависит от времени, которое прошло после обновления -->
+                <!-- только на mobile -->
+                <div class="projectsCard__content-updated mobile">
+                    <p><span>28.02.19, </span>обновлено 29.02.19 в 19:00</p>
+                </div>
+                <!--  -->
+
                 <div class="projectsCard__content-text">
                     <h3>Необходимо снять на видео 8 мероприятий</h3>
                     <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
@@ -117,21 +144,32 @@
                 <div class="projectsCard__content-bottom">
                     <p class="price">Оплата: <span>3000 RUB</span></p>
                     <p class="applications">24 заявки</p>
-                    <p class="openDays">Открыт 17 дней</p>
+                    <p class="openDays">Открыт 17 дней <i class="icon-calendar"></i></p>
                     <div class="btns">
-                        <a href="javascript:void(0)" class="сancelBtn">Снять заявку</a>
+                        <a href="javascript:void(0)" class="btn">Снять заявку</a>
                         <a href="javascript:void(0)" class="likeBtn"></a>
                     </div>
                 </div>
             </div>
             <!-- кнопки только на десктопе -->
             <div class="projectsCard__actions desktop">
-                <a href="javascript:void(0)" class="btn">Подтвердить участие</a>
-                <a href="javascript:void(0)" class="btn">Отказаться от исполнения</a>
+                <a href="javascript:void(0)" class="btn refuse-btn">Подтвердить участие</a>
+                <a href="javascript:void(0)" class="btn confirm-btn">Отказаться от исполнения</a>
                 <a href="javascript:void(0)" class="btn">Обсудить условия</a>
                 <a href="javascript:void(0)" class="btn">Написать заказчику</a>
             </div>
             <!---->
+
+            <!-- уведомление на десктопе -->
+            <div class="projectsCard__notification desktop-blk confirm-msg">
+                <p>Вы отклонили участие в данном проекте.</p>
+            </div>
+
+            <div class="projectsCard__notification desktop-blk refuse-msg">
+                <p>Вы подтвердили участие в данном проекте.</p>
+            </div>
+            <!--  -->
+
             <div class="projectsCard__documents">
                 <div class="projectsCard__documents-top">
                     <p class="label">
@@ -201,6 +239,18 @@
                                 <p class="city">Новосибирск</p>
                             </div>
                         </div>
+
+                        <!-- текст обновления зависит от времени, которое прошло после обновления -->
+                        <!-- только на десктопе -->
+                        <div class="row-item_updated desktop">
+                            <p><span>28.02.19, </span>обновлено 29.02.19 в 19:00</p>
+
+                            <!-- сразу после сохранения изменений выводить следующий текст -->
+                            <!-- <p>обновлено</p> -->
+
+                        </div>
+                        <!--  -->
+
                         <div class="rating">
                             <p>
                                 Иван Иванов
@@ -208,7 +258,28 @@
                             </p>
                             <p>Положительных отзывов 100%</p>
                         </div>
+
+                        <div class="parameters">
+                            <p><i class="icon-icon28"></i></p>
+                            <div class="hidden-list">
+                                <a href="javascript:void(0)">Удалить заявку</a>
+                                <a href="javascript:void(0)">Редактировать </a>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <!-- текст обновления зависит от времени, которое прошло после обновления -->
+                    <!-- только на мобильном -->
+                    <div class="row-item_updated mobile">
+                        <p><span>28.02.19, </span>обновлено 29.02.19 в 19:00</p>
+
+                        <!-- сразу после сохранения изменений выводить следующий текст -->
+                        <!-- <p>обновлено</p> -->
+
+                    </div>
+                    <!--  -->
+
                     <div class="row-item_content">
                         <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                         <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
