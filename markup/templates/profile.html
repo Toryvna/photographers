@@ -46,6 +46,79 @@
         </div>
     </div>
 
+    <!-- оставить отзыв -->
+    <div class="overlay-leaveFeedback overlayPopup">
+        <div class="close"></div>
+        <div class="leaveFeedback__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <h4>Ваш отзыв</h4>
+                <form onsubmit="return false">
+                    <div class="form-textarea">
+                        <textarea placeholder="Расскажите о вашем опыте в данном проекте"></textarea>
+                    </div>
+                    <p>Насколько Вы оцениваете работу с данным пользователем? </p>
+                    <div class="rating">
+                        <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="3" checked />
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                            <span class="icon"><i class="icon-icon1"></i></span>
+                        </label>
+                    </div>
+                    <div class="rating-label">
+                        <span class="value1">Низкий</span>
+                        <span class="value2">Ниже среднего</span>
+                        <span class="value3" style="display:inline;">Средний</span>
+                        <span class="value4">Выше среднего</span>
+                        <span class="value5">Высокий</span>
+                    </div>
+                    <div class="form-button">
+                        <button class="open-publishedPopup closeBtn">Опубликовать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+    <div class="overlay-publishedPopup overlayPopup">
+        <div class="close"></div>
+        <div class="publishedPopup__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <p>Ваш отзыв успешно опубликован.</p>
+            </div>
+        </div>
+    </div>
+
+
+
     <header>
         <div class="header-content">
             <div class="container clearfix">
@@ -173,8 +246,13 @@
                         <ul>
                             <li class="filter-items filter-items active" data-tab="customer"><a href="javascript:void(0)">Я заказчик</a></li>
                             <li class="filter-items filter-items" data-tab="executor"><a href="javascript:void(0)">Я исполнитель</a></li>
+                            <li class="filter-items filter-items" data-tab="favorites"><a href="javascript:void(0)">Избранное</a></li>
+
                         </ul>
-                        <a class="desc create-project" href="javascript:void(0)">Создать проект</a>
+                        <div class="btns-blk desktop">
+                            <a href="personal-area-projects.html" class="white">Рабочий профиль</a>
+                            <a class="create-project" href="create-project.html">Создать проект</a>
+                        </div>
                     </div>
                 </div>
                 <div class="projects-content active tab-item customer">
@@ -219,109 +297,445 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="mabile create-project" href="javascript:void(0)">Создать проект</a>
+                        <div class="btns-blk mabile">
+                            <a href="personal-area-projects.html" class="white">Рабочий профиль</a>
+                            <a class="create-project" href="create-project.html">Создать проект</a>
+                        </div>
                     </div>
                     <div class="projects-items">
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов</h3>
-                                    <span>Новосибирск</span>
+                        <!-- вид проекта при добавении услуги  -->
+                        <div class="projects-item">
+                            <div class="content clearfix">
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
-                            </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                                <span class="add-options">Подключить опции</span>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
+                                <div class="create-promotion">
+                                    <div class="flex-wrap">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-pin"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Закрепить в ТОП</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select">
+                                                <span>на</span>
+                                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span>дней</span>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Стоимость: </span>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-growth"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Поднять в поиске</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-highlighter"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Выделить цветом</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>от 500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-icon17"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Турбо продвижение</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов со статусом “Pro” и “Top”</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>скрыть от поисковых систем</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <p>Всего к оплате: <span>500 руб.</span></p>
+                                        <button>Опубликовать</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов</h3>
-                                    <span>Новосибирск</span>
+                        <!-- конец -->
+
+                        <!-- вид проекта при добавении/продлении услуги к уже существующим  -->
+                        <div class="projects-item">
+                            <div class="content clearfix">
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
-                            </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
+
+                                <div class="existing-promotion">
+                                    <div class="flex-wrap">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-pin"></i>
+                                                </div>
+                                            </div>
+                                            <div class="title">
+                                                <p>Закреплено в ТОП на 5 дней <a href="javascript:void(0)" class="extend-option">продлить</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-growth"></i>
+                                                </div>
+                                            </div>
+                                            <div class="title">
+                                                <p>Поднять в поиске</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <p>открыто только для специалистов</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)" class="adding-options">добавить услуги</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="create-promotion">
+                                    <div class="flex-wrap">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-pin"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Закрепить в ТОП на 5 дней <a href="javascript:void(0)" class="extend-option">продлить</a></p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="hidden-blk">
+                                                <div class="select">
+                                                    <span>на</span>
+                                                    <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                    <span>дней</span>
+                                                </div>
+                                                <div class="price">
+                                                    <p><span>Стоимость: </span>500 руб.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-growth"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Поднять в поиске</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-highlighter"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Выделить цветом</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>от 500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-icon17"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Турбо продвижение</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
+                                        <div class="list-check disabled">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked disabled>открыть только для специалистов</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов со статусом “Pro” и “Top”</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>скрыть от поисковых систем</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <p>Всего к оплате: <span>500 руб.</span></p>
+                                        <button>Опубликовать</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов</h3>
-                                    <span>Новосибирск</span>
+                        <!-- конец -->
+
+                        <!-- вид закрытого проекта с возможностью оставить отзыв  -->
+                        <div class="projects-item">
+                            <div class="content clearfix">
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
-                            </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                                <div class="leaveFeedback-btn">
+                                    <a href="javascript:void(0)" class="open-leaveFeedback">Написать отзыв</a>
+                                </div>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов</h3>
-                                    <span>Новосибирск</span>
+                        <!-- конец -->
+
+                        <!-- вид закрытого проекта, где нельзя оставить отзыв  -->
+                        <div class="projects-item">
+                            <div class="content clearfix">
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
-                            </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                                <div class="leaveFeedback-btn">
+                                    <a href="javascript:void(0)" class="disable">Написать отзыв</a>
+                                    <p class="error-msg">Вы не можете оставлять отзывы.</p>
+                                </div>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+                        <!-- конец -->
                     </div>
                 </div>
                 <div class="projects-content tab-item executor">
@@ -369,106 +783,718 @@
                         <a class="mabile create-project" href="javascript:void(0)">Создать проект</a>
                     </div>
                     <div class="projects-items">
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов2</h3>
-                                    <span>Новосибирск</span>
+                        <!-- вид проекта, когда участник выбран исполнителем
+                             добавдляется класс .selected  -->
+                        <div class="projects-item selected">
+                            <div class="content clearfix">
+                                <div class="notification">
+                                    <p>Вас выбрали исполнителем этого проекта. </p>
+                                    <a href="project_card-participant.html" class="go-link">Перейти в проект</a>
+                                    <a href="javascript:void(0)" class="cancel">Отклонить</a>
+                                    <span class="text-notification">Заявка отклонена</span>
                                 </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
-                            </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                </div>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
+                                <div class="create-promotion">
+                                    <div class="flex-wrap">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-pin"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Закрепить в ТОП</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select">
+                                                <span>на</span>
+                                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span>дней</span>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Стоимость: </span>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-growth"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Поднять в поиске</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-highlighter"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Выделить цветом</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>от 500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-icon17"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Турбо продвижение</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов со статусом “Pro” и “Top”</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>скрыть от поисковых систем</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <p>Всего к оплате: <span>500 руб.</span></p>
+                                        <button>Опубликовать</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов</h3>
-                                    <span>Новосибирск</span>
+                        <!-- конец -->
+
+
+                        <!-- вид проекта, когда участник выбран исполнителем и подтвердил участие  -->
+                        <div class="projects-item selected">
+                            <div class="content clearfix">
+                                <div class="notification">
+                                    <p>Вас выбрали исполнителем этого проекта. </p>
+                                    <span class="text-notification show">Заявка принята</span>
                                 </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
-                            </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                </div>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
+                                <div class="create-promotion">
+                                    <div class="flex-wrap">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-pin"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Закрепить в ТОП</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select">
+                                                <span>на</span>
+                                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span>дней</span>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Стоимость: </span>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-growth"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Поднять в поиске</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-highlighter"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Выделить цветом</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>от 500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-icon17"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Турбо продвижение</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов со статусом “Pro” и “Top”</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>скрыть от поисковых систем</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <p>Всего к оплате: <span>500 руб.</span></p>
+                                        <button>Опубликовать</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов</h3>
-                                    <span>Новосибирск</span>
+                        <!-- конец -->
+
+                        <div class="projects-item">
+                            <div class="content clearfix">
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
                                 </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
-                            </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
+                                <div class="create-promotion">
+                                    <div class="flex-wrap">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-pin"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Закрепить в ТОП</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select">
+                                                <span>на</span>
+                                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span>дней</span>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Стоимость: </span>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-growth"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Поднять в поиске</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-highlighter"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Выделить цветом</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>от 500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-icon17"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Турбо продвижение</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов со статусом “Pro” и “Top”</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>скрыть от поисковых систем</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <p>Всего к оплате: <span>500 руб.</span></p>
+                                        <button>Опубликовать</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="projects-item clearfix">
-                            <a href="project_сard-customer.html"></a>
-                            <div class="text">
-                                <div class="avatar">
-                                    <img src="../img/projects-item-img.png" alt="">
-                                    <h3>Иван Иванов</h3>
-                                    <span>Новосибирск</span>
-                                </div>
-                                <h4>Необходимо снять на видео 8 мероприятий</h4>
-                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                    Ipsum є,
-                                    фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
-                                    гранку
-                                    та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
-                                    століть,
-                                    але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                    </div>
+                </div>
+                <div class="projects-content tab-item favorites">
+                    <div class="projects-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Название проекта">
+                                <button><i class="icon-icon25"></i></button>
                             </div>
-                            <div class="sum clearfix">
-                                <span>3000 RUB</span>
-                                <ul>
-                                    <li>24 заявки</li>
-                                    <li>Открыт 17 дней</li>
-                                </ul>
+                            <div class="select">
+                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                                    <option>Параметры</option>
+                                    <option>Параметры 1</option>
+                                    <option>Параметры 2</option>
+                                    <option>Параметры 3</option>
+                                    <option>Параметры 4</option>
+                                    <option>Параметры 5</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="checkbox-items">
+                            <ul>
+                                <li>
+                                    <input id="q" type="checkbox" checked>
+                                    <label for="q">Открытые проекты (88)</label>
+                                </li>
+                                <li>
+                                    <input id="w" type="checkbox">
+                                    <label for="w">Проекты в работе</label>
+                                </li>
+                                <li>
+                                    <input id="e" type="checkbox">
+                                    <label for="e">Завершенные проекты</label>
+                                </li>
+                                <li>
+                                    <input id="r" type="checkbox">
+                                    <label for="r">Закрытые проекты</label>
+                                </li>
+                                <li>
+                                    <input id="t" type="checkbox">
+                                    <label for="t">Отклоненные проекты</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="mabile create-project" href="javascript:void(0)">Создать проект</a>
+                    </div>
+                    <div class="projects-items">
+                        <!-- вид проекта при добавении услуги  -->
+                        <div class="projects-item">
+                            <div class="content clearfix">
+                                <div class="text">
+                                    <a href="project_card-customer.html"></a>
+                                    <div class="avatar">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                        <h3>Иван Иванов</h3>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                    <h4>Необходимо снять на видео 8 мероприятий</h4>
+                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                        Ipsum є,
+                                        фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                        гранку
+                                        та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                                        століть,
+                                        але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                </div>
+                                <span class="add-options">Подключить опции</span>
+                                <div class="sum clearfix">
+                                    <span>3000 RUB</span>
+                                    <ul>
+                                        <li>24 заявки</li>
+                                        <li>Открыт 17 дней</li>
+                                    </ul>
+                                </div>
+                                <div class="create-promotion">
+                                    <div class="flex-wrap">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-pin"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Закрепить в ТОП</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select">
+                                                <span>на</span>
+                                                <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span>дней</span>
+                                            </div>
+                                            <div class="price">
+                                                <p><span>Стоимость: </span>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-growth"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Поднять в поиске</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-highlighter"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Выделить цветом</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>от 500 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <div class="icon">
+                                                    <i class="icon-icon17"></i>
+                                                </div>
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="title">
+                                                <p>Турбо продвижение</p>
+                                                <span class="tooltip"></span>
+                                                <div class="tooltip-text">
+                                                    <ul>
+                                                        <li>закрепление в ТОП на 24 часа </li>
+                                                        <li>7 поднятий </li>
+                                                        <li>выделение цветом на 7 дней</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <p>500 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>открыть только для специалистов со статусом “Pro” и “Top”</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-check">
+                                            <div class="block">
+                                                <label><input type="checkbox" checked>скрыть от поисковых систем</label>
+                                            </div>
+                                            <div class="block">
+                                                <span>500 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <p>Всего к оплате: <span>500 руб.</span></p>
+                                        <button>Опубликовать</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- конец -->
                     </div>
                 </div>
             </div>
