@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  jcf.replaceAll();
+
     //Слайдер документов
     $('.projectsCard__documents-slider').slick({
         dots: false,
@@ -71,5 +73,18 @@ $(document).ready(function(){
       }
     })
 
-});
+    $('.offer-btn').on('click', function(){
+      $('.projectsCard__offerService').show();
+      $(window).scrollTop($('.projectsCard').height() - $('.projectsCard__offerService').height());
+    });
+
+    $("#file-1").fileinput({
+      uploadUrl: "/ file-upload-batch / 1",
+    });
+  
+    $('.add-image#files2, .add-video#files3, .add-files#files4').on('click', function(){
+        $('#file-1').trigger('click');
+    })
+
+}); 
 

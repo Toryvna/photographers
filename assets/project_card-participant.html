@@ -29,8 +29,8 @@
         <div class="projectsCard__actions mobile">
             <a href="javascript:void(0)" class="btn refuse-btn">Подтвердить участие</a>
             <a href="javascript:void(0)" class="btn confirm-btn">Отказаться от исполнения</a>
-            <a href="javascript:void(0)" class="btn">Обсудить условия</a>
-            <a href="javascript:void(0)" class="btn">Написать заказчику</a>
+            <a href="javascript:void(0)" class="btn offer-btn">Обсудить условия</a>
+            <a href="profile-messages2.html" class="btn">Написать заказчику</a>
         </div>
         <!---->
 
@@ -107,8 +107,8 @@
         <div class="projectsCard__actions desktop">
             <a href="javascript:void(0)" class="btn refuse-btn">Подтвердить участие</a>
             <a href="javascript:void(0)" class="btn confirm-btn">Отказаться от исполнения</a>
-            <a href="javascript:void(0)" class="btn">Обсудить условия</a>
-            <a href="javascript:void(0)" class="btn">Написать заказчику</a>
+            <a href="javascript:void(0)" class="btn offer-btn">Обсудить условия</a>
+            <a href="profile-messages2.html" class="btn">Написать заказчику</a>
         </div>
         <!---->
 
@@ -262,6 +262,90 @@
                 </div>
             </div>
         </div>
+        <div class="projectsCard__offerService">
+            <div class="author">
+                <div class="author-avatar">
+                    <a href="profile.html">
+                        <img src="../img/year-item-img4.png" alt="avatar">
+                        <span class="status active"></span>
+                    </a>
+                </div>
+                <div class="author-info">
+                    <a href="profile.html" class="name">Иван Иванов (Вы)  </a>
+                </div>
+            </div>
+            <form>
+                <div class="form-textarea">
+                    <textarea></textarea>
+                    <div class="actions">
+                        <div class="upload-btns">
+                            <div class="files add-image" id="files2">
+                                <label>
+                                    <i class="icon-icon20"></i>
+                                </label>
+                            </div>
+                            <div class="files add-video" id="files3">
+                                <label>
+                                    <i class="icon-icon19"></i>
+                                </label>
+                            </div>
+                            <div class="files add-files" id="files4">
+                                <label>
+                                    <i class="icon-paperclip"></i>
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="attached-doc">
+                    <p><i class="icon-icon4"></i> Приклепленные документы</p>
+                    <div class="files" id="files">
+                        <div class="file-loading">
+                            <input id="file-1" type="file" name="file-1[]" multiple>
+                        </div>
+                    </div>
+                </div>
+                <div class="options">
+                    <p>Вы можете использовать дополнительные опции для своего продвижения:</p>
+                    <div class="options-line">
+                        <label for="value1">
+                            <span class="icon">
+                                <i class="icon-pin"></i>
+                            </span>
+                            <span class="wrap">
+                                <span class="title">
+                                    Закрепить в TOP
+                                </span>
+                                <span class="price">
+                                    500 руб.
+                                </span>
+                            </span>
+                        </label>
+                        <input id="value1" type="checkbox" checked>
+                    </div>
+                    <div class="options-line">
+                        <label for="value2">
+                            <span class="icon">
+                                <i class="icon-highlighter"></i>
+                            </span>
+                            <span class="wrap">
+                                <span class="title">
+                                    Выделить цветом
+                                </span>
+                                <span class="price">
+                                    500 руб.
+                                </span>
+                            </span>
+                        </label>
+                        <input id="value2" type="checkbox" checked>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <button>Отправить</button>
+                </div>
+            </form>
+        </div>
 
     </div>
 </div>
@@ -271,6 +355,9 @@
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/slick.min.js"></script>
+<script src="../js/fileinput.min.js"></script>
+<script src="../js/jcf.min.js"></script>
+<script src="../js/jcf.checkbox.min.js"></script>
 
 <script src="../js/script.min.js"></script>
 <script src="../js/project_сard-participant.min.js"></script>
