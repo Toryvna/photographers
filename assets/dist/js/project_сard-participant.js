@@ -84,7 +84,31 @@ $(document).ready(function(){
   
     $('.add-image#files2, .add-video#files3, .add-files#files4').on('click', function(){
         $('#file-1').trigger('click');
-    })
+    });
 
+    //изменение поста
+    $('.editBlock').on('click', function(){
+      $(this).closest('.row-item').find('.editBtn').css('display', 'inline');
+      $(this).closest('.row-item').find('.saveBtn').css('display', 'inline-block');
+    });
+
+    $(".editBtn").on('click',function(){
+      var height = $(this).closest('.row-item_content').find('.text').height(); //узнаем высоту блока с текстом
+      $(this).hide(); //скрываем кнопку редактировать
+      var divHtml = $(this).closest('.row-item_content').find('.text').html(); //выбираем содержимое текстового блока
+      var editableText = $("<textarea />"); 
+      $(editableText).css('height', height + 30); //устанавливаем высоту textarea
+      editableText.val(divHtml); //записываем содержимое текстового блока в textarea
+      $(this).closest('.row-item_content').find('.text').replaceWith(editableText);  //заменяем текстовый блок textarea
+      editableText.focus(); 
+    });
+    $('.saveBtn').on('click',function(){
+      $(this).hide();
+      $(this).closest('.row-item').find('.editBtn').css('display', 'none');
+      var html = $(this).closest('.row-item').find('textarea').val(); 
+      var viewableText = $("<div class='text'>");
+      viewableText.html(html); //записываем содержимое textarea в текстовый блок
+      $(this).closest('.row-item').find('textarea').replaceWith(viewableText); //заменяем textarea текстовым блоком
+    });
 }); 
 

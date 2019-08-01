@@ -47,12 +47,13 @@ $(document).ready(function(){
 
     //Редактирование публикации
     $('.edit').on('click', function () { // При нажатии на пункт редактировать появляются иконки для редактирования
-        $('.pencil-edit').css('display', 'inline').on('click', function () {
-            $('.postItem_content-text').find('.text-edit').attr("contentEditable", "true"); // При нажатии на карандаш можно редактировать текст
+        var parent = $(this).closest('.postItem');
+        parent.find('.pencil-edit').css('display', 'inline').on('click', function () {
+            parent.find('.postItem_content-text').find('.text-edit').attr("contentEditable", "true"); // При нажатии на карандаш можно редактировать текст
         });
-        $('.editing').css('display', 'flex');
-        $('.close').css('display', 'block');
-        $('.close').on('click', function () {
+        parent.find('.editing').css('display', 'flex');
+        parent.find('.close').css('display', 'block');
+        parent.find('.close').on('click', function () {
             $(this).parent(".gallery__image").css("display", "none"); // При нажатии на крестик удаляется фото
         })
     });

@@ -10,6 +10,8 @@
 @import "libs/popup-share";
 @import "libs/popup-attachments";
 @import "libs/leaveFeedback-popups";
+@import "libs/upload-popup";
+
 
 .fancybox-content {
     background-color: #27283c;
@@ -5603,7 +5605,7 @@ div#video2 {
                 width: calc(100% - 52px);
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-start;
+                align-items: center;
 
                 .input-text {
                     width: calc(100% - 30px);
@@ -5637,30 +5639,51 @@ div#video2 {
                         }
                     }
                 }
-
-                .input-file {
-                    margin-top: 6px;
-                    margin-right: 10px;
-
-                    &:last-of-type {
-                        margin-right: 0;
-                    }
-
-                    input {
-                        width: .1px;
-                        height: .1px;
-                        opacity: 0;
-                        overflow: hidden;
-                        position: absolute;
-                        z-index: -1;
-
-                        &+label {
+                
+                .add-files{
+                    position: relative;
+                    width: 30px;
+                    text-align: right;
+                    span{
+                        line-height: 33px;
+                        i{
+                            color: #d0d1d8;
+                            font-size: 20px;
                             cursor: pointer;
-
-                            i {
-                                color: #d0d1d8;
-                                font-size: 20px;
+                        }
+                    }
+                    .hiddenBlk{
+                        display: none;
+                        position: absolute;
+                        right: -15px;
+                        border: 1px solid #e1e1e1;
+                        background-color: #f5f6fa;
+                        top: -80px;
+                        padding: 15px;
+                        width: 210px;
+                        z-index: 2;
+                        text-align: left;
+                        .input-file{
+                            &:first-of-type{
+                                margin-bottom: 10px;
                             }
+                            input{
+                                display: none;
+                            }
+                        }
+                        label,
+                        a{
+                            color: #222222;
+                            font-size: 15px;
+                            cursor: pointer;
+                            &:hover{
+                                color: #495694;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .hiddenBlk{
+                            display: block;
                         }
                     }
                 }

@@ -12,12 +12,20 @@
 </head>
 
 <body>
-
+        <!-- build:section layout.upload_popup-->
+        <!-- /build -->
+    
+        <!-- build:section layout.notifications-->
+        <!-- /build -->
+    
         <!-- build:section layout.header_notification_popup-->
         <!-- /build -->
-
-    <!-- build:section layout.userHeader-->
-    <!-- /build -->
+    
+        <!-- build:section layout.userHeader-->
+        <!-- /build -->
+    
+        <!-- build:section layout.popup_share-->
+        <!-- /build -->
 
     <div class="bread-crumbs">
         <div class="container">
@@ -183,19 +191,94 @@
                 </div>
                 <div class="profile__addingPost">
                     <div class="avatar">
-                        <img src="../img/../img/search_page/publication-avatar.png" alt="avatar">
+                        <img src="../img/year-item-img4.png" alt="avatar">
                     </div>
                     <form>
                         <div class="input-text">
-                            <textarea class="checkTextarea" placeholder="Добавить запись "></textarea>
+                            <textarea class="checkTextarea" type="text" placeholder="Добавить запись "></textarea>
                         </div>
-                        <div class="input-file">
-                            <a href="javascript:void(0)" class="select-photo"><i class="icon-icon26"></i></a>
-                        </div>
-                        <div class="input-file">
-                            <a href="javascript:void(0)" class="select-video"><i class="icon-icon19"></i></a>
+                        <div class="add-files">
+                            <span><i class="icon-icon26"></i></span>
+                            <div class="hiddenBlk">
+                                <div class="input-file">
+                                    <input type="file" name="file" id="file" class="inputfile" accept="video/*|image/*">
+                                    <label for="file">Загрузить с компьютера</label>
+                                </div>
+                                <div class="input-file">
+                                    <a href="javascript:void(0)" class="open-uploadPopup">Загрузить из галереи</a>
+                                </div>
+                            </div>
                         </div>
                     </form>
+                </div>
+                <div class="profile__adding-photos">
+                    <div class="addingPhotos__slider">
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img4.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img5.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img6.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img2.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img4.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img5.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img6.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img2.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img4.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img5.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img6.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img2.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img4.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img5.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img6.jpg" alt="image">
+                        </div>
+                        <div class="addingPhotos__slider-item">
+                            <span class="close">&#10006;</span>
+                            <img src="../img/search_page/specialists-img2.jpg" alt="image">
+                        </div>
+                    </div>
+                    <p class="info-text">Одна запись не может содержать более 10 вложений.</p>
                 </div>
                 <div class="profile__searchPost">
                     <form>
@@ -215,13 +298,15 @@
     </section>
 
     <!-- build:section layout.footer-->
-    <!-- /build -->
+    <!-- /build --> 
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
     <script src="../js/jcf.min.js"></script>
     <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../js/video-js.min.js"></script>
 
     <script src="../js/script.min.js"></script>

@@ -402,12 +402,13 @@
                 background-color: #000000;
                 opacity: 0.58;
                 font-size: 13px;
-                padding: 1px 6px;
+                padding: 4px 6px;
                 position: absolute;
                 right: 0;
                 top: 0;
                 z-index: 10;
                 display: none;
+                cursor: pointer;
             }
 
             .gallery__image {

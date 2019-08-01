@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     //Попап поделиться 
     $('.shareBtn').on("click", function () {
-        $('.overlayPopup').addClass('active');
+        $('.share_popup-overlay').addClass('active');
         $(document).mouseup(function (e) {
             $('.write-file').on('click', function () {
                 $(this).find('.dropdown-list').toggleClass('active');
@@ -72,13 +72,13 @@ $(document).ready(function () {
 
 
     });
-    $('.share_popup .closeBtn, .overlayPopup .close').on("click", function () {
-        $('.overlayPopup').removeClass('active');
+    $('.share_popup .closeBtn, .share_popup-overlay .close').on("click", function () {
+        $('.share_popup-overlay').removeClass('active');
     });
 
     $('.button-send').on("click", function () {
         $('.overlayPopupThanks').addClass('active');
-        $('.overlayPopup').removeClass('active');
+        $('.share_popup-overlay').removeClass('active');
     });
     $('.popup-thanks .closeBtn, .overlayPopupThanks .close').on("click", function () {
         $('.overlayPopupThanks').removeClass('active');
@@ -97,4 +97,58 @@ $(document).ready(function () {
         }
     });
 
+    //попап подгрузки медиа из галереи
+    $('.open-uploadPopup').on("click", function () {
+        $('.overlay-uploadPopup').addClass('active');
+        uploadPopup();
+    });
+    $('.overlay-uploadPopup .closeBtn, .overlay-uploadPopup .close').on("click", function () {
+        $('.overlay-uploadPopup').removeClass('active');
+    });
+
+
+     //слайдеры в загрузке медиа с галереи
+    function uploadPopup(){
+        $('.albums-slider').slick({
+            infinite: false,
+            slidesToShow: 3,
+            nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+            prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    infinite: false,
+                    slidesToShow: 2,
+                    nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+                    prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+                }
+            },]
+        });
+        $('.videoPopup-slider').slick({
+            infinite: false,
+            slidesToShow: 3,
+            nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+            prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    infinite: false,
+                    slidesToShow: 2,
+                    nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+                    prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+                }
+            },]
+        });
+       
+    }
+
+    //выбор фото/видео в попапе подгрузки с гелереи
+    $('.images-wrap .item').on('click', function(){
+        $(this).toggleClass('selected');
+    });
+    $('.videoPopup-slider .video-wrap').on('click', function(){
+        $(this).toggleClass('selected');
+    });
+
+    
 });

@@ -12,6 +12,9 @@
 </head>
 
 <body class="body">
+    <!-- build:section layout.upload_popup-->
+    <!-- /build -->
+
     <!-- build:section layout.notifications-->
     <!-- /build -->
 
@@ -193,13 +196,17 @@
                         <div class="input-text">
                             <textarea class="checkTextarea" type="text" placeholder="Добавить запись "></textarea>
                         </div>
-                        <div class="input-file">
-                            <input type="file" name="file" id="file" class="inputfile" accept="image/*">
-                            <label for="file"><i class="icon-icon26"></i></label>
-                        </div>
-                        <div class="input-file">
-                            <input type="file" name="file" id="file" class="inputfile" accept="video/*">
-                            <label for="file"><i class="icon-icon19"></i></label>
+                        <div class="add-files">
+                            <span><i class="icon-icon26"></i></span>
+                            <div class="hiddenBlk">
+                                <div class="input-file">
+                                    <input type="file" name="file" id="file" class="inputfile" accept="video/*|image/*">
+                                    <label for="file">Загрузить с компьютера</label>
+                                </div>
+                                <div class="input-file">
+                                    <a href="javascript:void(0)" class="open-uploadPopup">Загрузить из галереи</a>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

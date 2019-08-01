@@ -12,6 +12,114 @@
 </head>
 
 <body class="body">
+    <div class="overlay-uploadPopup overlayPopup">
+        <div class="close"></div>
+        <div class="uploadPopup__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <div class="popup-heading">
+                    <p>Мои альбомы 12</p>
+                </div>
+                <div class="popup-body">
+                    <div class="albums-slider">
+                        <div class="album-slide">
+                            <a href="javascript:void(0)" style="background: url('../img/album-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                                <p>Пейзажи</p>
+                            </a>
+                        </div>
+                        <div class="album-slide">
+                            <a href="javascript:void(0)" style="background: url('../img/album-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                                <p>Art</p>
+                            </a>
+                        </div>
+                        <div class="album-slide">
+                            <a href="javascript:void(0)" style="background: url('../img/album-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                                <p>Свадьбы</p>
+                            </a>
+                        </div>
+                        <div class="album-slide">
+                            <a href="javascript:void(0)" style="background: url('../img/album-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                                <p>Пейзажи</p>
+                            </a>
+                        </div>
+                        <div class="album-slide">
+                            <a href="javascript:void(0)" style="background: url('../img/album-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                                <p>Пейзажи</p>
+                            </a>
+                        </div>
+                        <div class="album-slide">
+                            <a href="javascript:void(0)" style="background: url('../img/album-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                                <p>Пейзажи</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-heading">
+                    <p>Мои видео 12</p>
+                </div>
+                <div class="popup-body">
+                    <div class="videoPopup-slider">
+                        <div class="video-slide">
+                            <div class="video-wrap" href="javascript:void(0)" style="background: url('../img/video-text-img2.png') no-repeat 50% 50%; background-size: cover;"></div>
+                        </div>
+                        <div class="video-slide">
+                            <div class="video-wrap" href="javascript:void(0)" style="background: url('../img/video-text-img3.png') no-repeat 50% 50%; background-size: cover;"></div>
+                        </div>
+                        <div class="video-slide">
+                            <div class="video-wrap" href="javascript:void(0)" style="background: url('../img/video-text-img4.png') no-repeat 50% 50%; background-size: cover;"></div>
+                        </div>
+                        <div class="video-slide">
+                            <div class="video-wrap" href="javascript:void(0)" style="background: url('../img/video-text-img3.png') no-repeat 50% 50%; background-size: cover;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-heading">
+                    <p>Раннее загруженные фотографии</p>
+                </div>
+                <div class="popup-body">
+                    <div class="images-wrap">
+                        <div class="item">
+                            <img src="../img/year-item-img1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img11.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img5.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img6.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img7.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img3.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img10.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img9.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img13.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img14.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="../img/year-item-img15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="notifications">
         <div class="notification show">
             <div class="closeBtn"></div>
@@ -170,7 +278,7 @@
         </div>
     </header>
 
-    <div class="overlayPopup">
+    <div class="overlayPopup share_popup-overlay">
         <div class="close"></div>
         <div class="share_popup mCustomScrollbar">
             <div class="closeBtn"></div>
@@ -471,13 +579,17 @@
                         <div class="input-text">
                             <textarea class="checkTextarea" type="text" placeholder="Добавить запись "></textarea>
                         </div>
-                        <div class="input-file">
-                            <input type="file" name="file" id="file" class="inputfile" accept="image/*">
-                            <label for="file"><i class="icon-icon26"></i></label>
-                        </div>
-                        <div class="input-file">
-                            <input type="file" name="file" id="file" class="inputfile" accept="video/*">
-                            <label for="file"><i class="icon-icon19"></i></label>
+                        <div class="add-files">
+                            <span><i class="icon-icon26"></i></span>
+                            <div class="hiddenBlk">
+                                <div class="input-file">
+                                    <input type="file" name="file" id="file" class="inputfile" accept="video/*|image/*">
+                                    <label for="file">Загрузить с компьютера</label>
+                                </div>
+                                <div class="input-file">
+                                    <a href="javascript:void(0)" class="open-uploadPopup">Загрузить из галереи</a>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

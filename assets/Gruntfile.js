@@ -160,6 +160,7 @@ grunt.initConfig({
 						popup_share:'<%= fixturesPath %>/templates/popup-share.html',
 						project_popups:'<%= fixturesPath %>/templates/project-popups.html',
 						leaveFeedback_popups:'<%= fixturesPath %>/templates/leaveFeedback-popups.html',
+						upload_popup:'<%= fixturesPath %>/templates/upload-popup.html',
 						
 						
 					}
