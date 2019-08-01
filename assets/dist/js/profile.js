@@ -155,7 +155,7 @@ $(document).ready(function () {
 
      $('.notification .cancel').on('click', function(){
         $(this).parent().find('a').hide();
-        $(this).parent().find('.text-notification').show();
+        $(this).parent().find('.text-notification').css('display', 'block');
      });
      
 });

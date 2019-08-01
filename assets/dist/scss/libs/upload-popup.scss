@@ -195,6 +195,7 @@
                         top: 0;
                         background-color: #000000;
                         opacity: 0.53;
+                        z-index: 2;
                     }
                     &::after{
                         content: '\e827';
@@ -205,6 +206,7 @@
                         right: 10px;
                         top: 10px;
                         display: none;
+                        z-index: 2;
                     }
                     &.selected{
                         &::before{
@@ -212,6 +214,37 @@
                         }
                         &:after{
                             display: block
+                        }
+                    }
+                    .play{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 38px;
+                        height: 38px;
+                        background-color: #54559c;
+                        border-radius: 50%;
+                        z-index: 1;
+                        &::before{
+                            content: '';
+                            width: 44px;
+                            height: 44px;
+                            background-color: #54559c;
+                            opacity: 0.7;
+                            border-radius: 50%;
+                            z-index: 0;
+                            position: absolute;
+                            top: -3px;
+                            left: -3px;
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            border: 5px solid transparent;
+                            border-left: 5px solid #fff;
+                            top: calc(50% - 4px);
+                            left: 50%;
                         }
                     }
                 }
