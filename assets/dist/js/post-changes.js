@@ -1,22 +1,4 @@
 $(document).ready(function(){
-    // Скрыть при клике меню с опциями на публицакии
-
-    if ($(window).width() < 1025) {
-        $(document).mouseup(function (e) {
-            $('.postItem_heading-options .arrowBtn').on('click', function () {
-                $(this).parent().addClass('show');
-            });
-            var item = $('.postItem_heading-options.show');
-            if (!item.is(e.target) && item.has(e.target).length === 0) {
-                item.removeClass('show');
-            }
-        });
-    }
-
-    $('.postItem_heading-options a').on('click', function () {
-        $('.postItem_heading-options.show').removeClass('show');
-        $(this).parent().toggleClass('show');
-    });
 
 
     $('.likeBtn').on('click', function () {
@@ -45,17 +27,36 @@ $(document).ready(function(){
     })
 
 
-    //Редактирование публикации
-    $('.edit').on('click', function () { // При нажатии на пункт редактировать появляются иконки для редактирования
+    //изменение поста
+    $('.edit').on('click', function(){
         var parent = $(this).closest('.postItem');
-        parent.find('.pencil-edit').css('display', 'inline').on('click', function () {
-            parent.find('.postItem_content-text').find('.text-edit').attr("contentEditable", "true"); // При нажатии на карандаш можно редактировать текст
-        });
-        parent.find('.editing').css('display', 'flex');
+        parent.find('.editBtn').css('display', 'inline');
+        parent.find('.saveBtn').css('display', 'inline-block');
         parent.find('.close').css('display', 'block');
-        parent.find('.close').on('click', function () {
-            $(this).parent(".gallery__image").css("display", "none"); // При нажатии на крестик удаляется фото
-        })
-    });
+        parent.find('.editing').css('display', 'flex');
+      });
+  
+      $(".editBtn").on('click',function(){
+        var parent = $(this).closest('.postItem');
+        var height = parent.find('.text').height(); //узнаем высоту блока с текстом
+        $(this).hide(); //скрываем кнопку редактировать
+        var divHtml = parent.find('.text').html(); //выбираем содержимое текстового блока
+        var editableText = $("<textarea class='textarea-change' />"); 
+        $(editableText).css('height', height + 60); //устанавливаем высоту textarea
+        editableText.val(divHtml); //записываем содержимое текстового блока в textarea
+        parent.find('.text').replaceWith(editableText);  //заменяем текстовый блок textarea
+        editableText.focus(); 
+      });
+      $('.saveBtn').on('click',function(){
+        var parent = $(this).closest('.postItem');
+        $(this).hide();
+        parent.find('.editBtn').css('display', 'none');
+        parent.find('.close').css('display', 'none');
+        parent.find('.editing').css('display', 'none');
+        var html = parent.find('.textarea-change').val(); 
+        var viewableText = $("<div class='text'>");
+        viewableText.html(html); //записываем содержимое textarea в текстовый блок
+        parent.find('.textarea-change').replaceWith(viewableText); //заменяем textarea текстовым блоком
+      });
 
 });

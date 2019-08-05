@@ -74,6 +74,19 @@ ul li,ol li{
   margin: 0 -15px;
 }
 
+button{
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #54559c;
+  color: #fff;
+  padding: 15px 35px;
+  transition: all .5s;
+  border:none; 
+  &:hover{
+    background-color: #27283c;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   .page-content{

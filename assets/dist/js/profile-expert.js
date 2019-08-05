@@ -146,8 +146,8 @@ $(document).ready(function () {
     $('.images-wrap .item').on('click', function(){
         $(this).toggleClass('selected');
     });
-    $('.video-wrap').on('click touch', function(){
-        $(this).toggleClass('selected');
+    $('.videoPopup-slider').on('click touch', function(){
+        $(event.target).toggleClass('selected');
     });
 
     

@@ -559,7 +559,7 @@
                     color: #222222;
                     display: inline;
                 }
-                textarea{
+                .textarea-change{
                     border: 1px solid #d3d3d3;
                     width: 100%;
                     font-size: 16px;
@@ -582,6 +582,27 @@
                     border-bottom: none;
                     padding-bottom: 0;
                 }
+                .documets-item{
+                    position: relative;
+                }
+                .removeDoc{
+                    display: none;
+                    border: none;
+                    position: absolute;
+                    right: 16px;
+                    top: 0;
+                    width: 28px;
+                    height: 28px;
+                    background-color: rgba(0,0,0,.58);
+                    cursor: pointer;
+                    z-index: 1;
+                    &::before{
+                        content: 'x';
+                        color: #fff;
+                        font-size: 35px;
+                        line-height: 24px;
+                    }
+                }
             }
             .saveBtn{
                 font-size: 14px;
@@ -596,6 +617,137 @@
                 &:hover{
                     color: #54559c;
                     background-color: transparent;
+                }
+            }
+            .addingDocs{
+                margin-top: 15px;
+                display: none;
+            }
+            .file-input{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .file-preview{
+                width: 100%;
+            }
+            .fileinput-remove{
+                display: none;
+            }
+            .file-preview-thumbnails{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .file-preview-frame{
+                    max-width: calc(50% - 10px);
+                    position: relative;
+                    margin-bottom: 15px;
+                    margin-right: 10px;
+                    .file-caption-info{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        text-align: left;
+                        color: #222222;
+                        font-size: 14px;
+                    }
+                    .file-size-info,
+                    .file-thumb-progress,
+                    .file-upload-indicator{
+                        display: none;
+                    }
+                    .file-footer-buttons{
+                        button{
+                            display: none;
+                            &.kv-file-remove{
+                                display: block;
+                                border: none;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                width: 28px;
+                                height: 28px;
+                                background-color: rgba(0,0,0,0.58);
+                                cursor: pointer;
+                                z-index: 1;
+                                &::before{
+                                    content: 'x';
+                                    color: #fff;
+                                    font-size: 35px;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .file-caption, 
+            .fileinput-cancel,
+            .fileinput-upload {
+                display: none;
+            }
+            .file-drop-zone{
+                font-size: 0;
+                video,
+                textarea{
+                    max-width: 100%;
+                }
+            }
+            .btn-file{
+                i,
+                .hidden-xs{
+                    display: none;
+                }
+                input{
+                    width: 39px;
+                    height: 39px;
+                    background-color: #d0d1d8;
+                    border-radius: 50%;
+                    text-align: center;
+                    cursor: pointer;
+                    display: inline-block;
+                    border: none;
+                    padding: 5px 13px;
+                    position: relative;
+                    &:before{
+                        content: '+';
+                        color: #ffffff;
+                        font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                        font-size: 31px;
+                        line-height: 40px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        width: 39px;
+                        height: 39px;
+                        background-color: #d0d1d8;
+                        border-radius: 50%;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+            .add-file{
+                width: 39px;
+                height: 39px;
+                background-color: #d0d1d8;
+                border-radius: 50%;
+                text-align: center;
+                cursor: pointer;
+                display: inline-block;
+                margin-bottom: 20px;
+                &::after{
+                    content: '+';
+                    color: #ffffff;
+                    font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                    font-size: 28px;
+                    text-transform: uppercase;
+                    line-height: 39px;
+                }
+                input{
+                    display: none;
                 }
             }
         }

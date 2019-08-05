@@ -90,6 +90,9 @@ $(document).ready(function(){
     $('.editBlock').on('click', function(){
       $(this).closest('.row-item').find('.editBtn').css('display', 'inline');
       $(this).closest('.row-item').find('.saveBtn').css('display', 'inline-block');
+      $(this).closest('.row-item').find('.removeDoc').css('display', 'block');
+      $(this).closest('.row-item').find('.addingDocs').css('display', 'block');
+      
     });
 
     $(".editBtn").on('click',function(){
@@ -105,10 +108,17 @@ $(document).ready(function(){
     $('.saveBtn').on('click',function(){
       $(this).hide();
       $(this).closest('.row-item').find('.editBtn').css('display', 'none');
+      $(this).closest('.row-item').find('.removeDoc').css('display', 'none');
+      $(this).closest('.row-item').find('.addingDocs').css('display', 'none');
       var html = $(this).closest('.row-item').find('textarea').val(); 
       var viewableText = $("<div class='text'>");
       viewableText.html(html); //записываем содержимое textarea в текстовый блок
       $(this).closest('.row-item').find('textarea').replaceWith(viewableText); //заменяем textarea текстовым блоком
+    });
+
+    //upload files
+    $("#file-1").fileinput({
+      uploadUrl: "/ file-upload-batch / 1",
     });
 }); 
 
