@@ -91,47 +91,6 @@ $(document).ready(function(){
         $(this).parent().toggleClass('active');
     });
 
-    //autocomplete
-    $( function() {
-        var setInfo = [
-            "Анапа",
-            "Ангарск",
-            "Анжеро-Судженск",
-            "Апатиты",
-            "Арзамас",
-            "Балаково",
-            "Балахна",
-            "Балашиха",
-            "Владивосток",
-            "Владикавказ",
-            "Владимир",
-            "Кемерово",
-            "Керчь",
-            "Кинешма",
-            "Краснодар",
-            "Краснокаменск",
-            "Краснокамск",
-            "Москва",
-            "Мурманск",
-            "Муром",
-            "Сальск",
-            "Самара",
-            "Санкт-Петербург",
-            "Саранск"
-        ];
-
-        $( "#setCountry" ).autocomplete({
-          source: setInfo
-        });
-
-        $( "#setCity" ).autocomplete({
-            source: setInfo
-        });
-
-        $( "#setMetro" ).autocomplete({
-            source: setInfo
-        });
-    } );
 
 });
 

@@ -2772,23 +2772,23 @@ div#video2 {
 
                 .year-items {
                     margin: 0;
-                }
-
-                .year-item {
-                    margin: 0 -1.5%;
-
-                    .year-item-img {
-                        width: 54%;
-                        float: left;
-                        height: 114px;
-                        margin: 0 1.5% 10px;
-
-                        &:nth-child(2) {
-                            width: 40%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .year-item-img{
+                        max-width: calc(50% - 5px);
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:nth-child(2n){
+                            margin-right: 0;
                         }
-
-                        &:nth-child(3) {
-                            width: 40%;
+                        img{
+                            max-width: 100%;
+                            max-height: 100%;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -3122,7 +3122,7 @@ div#video2 {
                                 -ms-transform: translate(0, -50%);
                                 -o-transform: translate(0, -50%);
                                 transform: translate(0, -50%);
-
+                                padding: 0;
                                 &:hover {
                                     i {
                                         color: #022222;
@@ -3224,7 +3224,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -3649,7 +3649,7 @@ div#video2 {
                     position: absolute;
                     top: 0;
                     right: 0;
-
+                    padding: 0;
                     i {
                         font-size: 19px;
                         color: #ffffff;
@@ -3782,7 +3782,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -4555,7 +4555,7 @@ div#video2 {
                 z-index: 1;
                 top: 0;
                 height: 100%;
-
+                padding: 0;
                 &.slick-disabled {
                     display: none !important;
                 }
@@ -4666,7 +4666,7 @@ div#video2 {
                 z-index: 1;
                 top: 0;
                 height: 100%;
-
+                padding: 0;
                 &.slick-disabled {
                     display: none !important;
                 }
@@ -5739,7 +5739,7 @@ div#video2 {
                 z-index: 1;
                 top: 0;
                 height: 100%;
-
+                padding: 0;
                 &.slick-disabled {
                     display: none !important;
                 }
@@ -7594,7 +7594,7 @@ div#video2 {
                 top: inherit;
                 width: auto;
                 height: auto;
-
+                padding: 0;
                 i {
                     &:before {
                         color: #54559c;
@@ -8356,7 +8356,7 @@ div#video2 {
     cursor: pointer;
     position: absolute;
     background-color: #d9dfea;
-
+    padding: 0;
     i {
         top: 50%;
         left: 50%;
@@ -9034,41 +9034,15 @@ div#video2 {
                 }
 
                 .foto-year {
-                    .year-item {
-                        margin: 0 -1%;
-
-                        &:nth-child(even) {
-                            .year-item-img {
-                                width: 17%;
-
-                                &:nth-child(2) {
-                                    width: 29%;
-                                }
-
-                                &:nth-child(3) {
-                                    width: 17%;
-                                }
-
-                                &:nth-child(4) {
-                                    width: 29%;
-                                }
+                    .year-items {
+                        .year-item-img{
+                            max-width: calc(100% / 3 - 10px);
+                            margin-right: 15px;
+                            &:nth-child(2n){
+                                margin-right: 15px;
                             }
-                        }
-
-                        .year-item-img {
-                            width: 29%;
-                            margin: 0 1% 10px;
-
-                            &:nth-child(2) {
-                                width: 17%;
-                            }
-
-                            &:nth-child(3) {
-                                width: 29%;
-                            }
-
-                            &:nth-child(4) {
-                                width: 17%;
+                            &:nth-child(3n){
+                                margin-right: 0;
                             }
                         }
                     }
@@ -10077,7 +10051,7 @@ div#video2 {
                     -o-transition: all .2s ease-in-out;
                     -ms-transition: all .2s ease-in-out;
                     transition: all .2s ease-in-out;
-
+                    padding: 0;
                     i {
                         &::before {
                             color: #fff;
@@ -10714,42 +10688,17 @@ div#video2 {
                         margin-bottom: 25px;
                     }
 
-                    .year-item {
-                        margin: 0 -1%;
-
-                        &:nth-child(even) {
-                            .year-item-img {
-                                width: 20%;
-
-                                &:nth-child(2) {
-                                    width: 26%;
-                                }
-
-                                &:nth-child(3) {
-                                    width: 20%;
-                                }
-
-                                &:nth-child(4) {
-                                    width: 26%;
-                                }
+                    
+                    .year-items {
+                        .year-item-img{
+                            max-width: calc(100% / 4 - 15px);
+                            margin-right: 20px;
+                            margin-bottom: 20px;
+                            &:nth-child(3n){
+                                margin-right: 20px;
                             }
-                        }
-
-                        .year-item-img {
-                            width: 26%;
-                            height: 188px;
-                            margin: 0 1% 18px;
-
-                            &:nth-child(2) {
-                                width: 20%;
-                            }
-
-                            &:nth-child(3) {
-                                width: 26%;
-                            }
-
-                            &:nth-child(4) {
-                                width: 20%;
+                            &:nth-child(4n){
+                                margin-right: 0;
                             }
                         }
                     }

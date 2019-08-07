@@ -18,6 +18,7 @@
         transform: translate(-50%, -50%);
         cursor: pointer; 
         background-color: #54559c;
+        padding: 0;
         &:after{
             content: '';
             position: absolute;
@@ -307,6 +308,7 @@
                 bottom: 0;
                 border: none;
                 background: transparent;
+                padding: 0;
                 i{
                     color: #54559c;
                     font-size: 24px;

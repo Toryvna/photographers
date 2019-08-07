@@ -68,6 +68,7 @@
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
+                        padding: 0;
                         i{
                             font-size: 18px;
                             color: #000000;
@@ -185,6 +186,7 @@
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
+                        padding: 0;
                         i{
                             font-size: 18px;
                             color: #000000;
@@ -571,6 +573,7 @@
                         border: none;
                         cursor: pointer;
                         background: transparent;
+                        padding: 0;
                         i{
                             &:before{
                                 color: #54559c;
@@ -618,6 +621,7 @@
                         position: relative;
                         background-color: transparent;
                         margin-right: 5px;
+                        padding: 0;
                         cursor: pointer;
                         span {
                             display: block;
@@ -922,7 +926,7 @@
                             height: calc(100% - 5px);  
                             width: 24px;
                             z-index: 1;
-
+                            padding: 0;
                             -webkit-transition: all .2s ease-in-out;
                             -moz-transition:    all .2s ease-in-out;
                             -o-transition:      all .2s ease-in-out;
