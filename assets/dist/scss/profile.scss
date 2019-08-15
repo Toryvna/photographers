@@ -34,7 +34,7 @@
         transform: translate(-50%, -50%);
         cursor: pointer;
         background-color: #54559c;
-
+        padding: 0;
         &:after {
             content: '';
             position: absolute;
@@ -333,7 +333,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -948,9 +948,9 @@ div#video2 {
                                     }
                                 }
                             }
-                            &:hover{
-                                &+.tooltip-text{
-                                    display: block;
+                            &.close{
+                                &::before{
+                                    content: 'x';
                                 }
                             }
                         }
@@ -1285,7 +1285,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -1743,7 +1743,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -2265,7 +2265,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -2534,7 +2534,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -4113,6 +4113,7 @@ div#video2 {
                             top: auto;
                             right: 0;
                             color: #fff;
+                            padding: 0;
                         }
                     }
                 }
@@ -4257,7 +4258,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -4718,6 +4719,7 @@ div#video2 {
                     color: #d0d1d8;
                     font-size: 19px;
                     cursor: pointer;
+                    padding: 0;
                 }
             }
         }
@@ -4873,6 +4875,7 @@ div#video2 {
                         top: auto;
                         right: 0;
                         color: #fff;
+                        padding: 0;
                     }
                 }
             }
@@ -5791,6 +5794,7 @@ div#video2 {
                     color: #d0d1d8;
                     font-size: 19px;
                     cursor: pointer;
+                    padding: 0;
                 }
             }
         }
@@ -5978,7 +5982,7 @@ div#video2 {
                         -ms-transform: translate(0, -50%);
                         -o-transform: translate(0, -50%);
                         transform: translate(0, -50%);
-
+                        padding: 0;
                         &:hover {
                             i {
                                 color: #022222;
@@ -6202,7 +6206,7 @@ div#video2 {
                         border: none;
                         background: transparent;
                         cursor: pointer;
-
+                        padding: 0;
                         i {
                             font-size: 19px;
                             color: #d0d1d8;
@@ -7813,7 +7817,7 @@ div#video2 {
                                     width: 28px;
                                     height: 28px;
                                     background-color: rgba(0,0,0,0.58);
-                                    padding-left: 4px;
+                                    padding: 0 0 0 4px;
                                     cursor: pointer;
                                     z-index: 1;
                                     &::before{
@@ -7874,6 +7878,17 @@ div#video2 {
                             position: absolute;
                             top: 0;
                             left: 0;
+                            z-index: 2;
+                        }
+                        &:after{
+                            content: '';
+                            width: 45px;
+                            height: 45px;
+                            background-color: #fff;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
                         }
                     }
                 }
@@ -8162,9 +8177,9 @@ div#video2 {
                                 }
                             }
                         }
-                        &:hover{
-                            &+.tooltip-text{
-                                display: block;
+                        &.close{
+                            &::before{
+                                content: 'x';
                             }
                         }
                     }
@@ -8700,6 +8715,18 @@ div#video2 {
                             .title {
                                 .tooltip{
                                     display: none;
+                                    &-text{
+                                        right: 0;
+                                    }
+                                }
+                            }
+
+                            &-top{
+                                &:hover{
+                                    &+.title .tooltip-text{
+                                        display: block;
+                                        top: 0;
+                                    }
                                 }
                             }
                         }
@@ -10132,6 +10159,17 @@ div#video2 {
                         .title {
                             .tooltip{
                                 display: none;
+                                &-text{
+                                    right: 0;
+                                }
+                            }
+                        }
+                        &-top{
+                            &:hover{
+                                &+.title .tooltip-text{
+                                    display: block;
+                                    top: 0;
+                                }
                             }
                         }
                     }
@@ -10374,12 +10412,6 @@ div#video2 {
                         }
                     }
                     .item-top{
-                        &:hover{
-                            &+.title .tooltip-text{
-                                display: block;
-                                top: 0;
-                            }
-                        }
                         .jcf-checkbox {
                             width: 8px;
                             height: 8px;
@@ -11413,12 +11445,6 @@ div#video2 {
                     }
                 }
                 .item-top{
-                    &:hover{
-                        &+.title .tooltip-text{
-                            display: block;
-                            top: 0;
-                        }
-                    }
                     .jcf-checkbox {
                         width: 8px;
                         height: 8px;

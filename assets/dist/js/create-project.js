@@ -10,6 +10,12 @@ $(document).ready(function(){
         $('#file-1').trigger('click');
     })
 
+    //hover on mobile
+    $('.create-promotion .item .title .tooltip').on('click', function(){
+        $(this).parent().find('.tooltip-text').toggle();
+        $(this).toggleClass('close');
+    });
 
 
+    
 });

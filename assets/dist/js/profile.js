@@ -157,5 +157,11 @@ $(document).ready(function () {
         $(this).parent().find('a').hide();
         $(this).parent().find('.text-notification').css('display', 'block');
      });
+
+    //hover on mobile
+    $('.create-promotion .item .title .tooltip').on('click', function(){
+        $(this).parent().find('.tooltip-text').toggle();
+        $(this).toggleClass('close');
+    });
      
 });
